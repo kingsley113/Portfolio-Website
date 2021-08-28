@@ -23,7 +23,7 @@ email: cameron.kingsley13@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome! This is my personal website with a selection of my best work. It is still in development and will be updated soon!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://cameronjameskingsley.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kingsley113.github.io/Portfolio-Website/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: studio1three
 github_username:  kingsley113
 
