@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import useHorizontal from "@oberon-amsterdam/horizontal/hook";
+import React, { useState } from "react";
+
+import Header from "./containers/header";
+import Footer from "./containers/footer";
+import PageContent from "./containers/pageContent";
 
 function App() {
+  // Setup Horizontal Scroll
+  const [container, setContainer] = useState();
+  useHorizontal({ container: container });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div
+        className="container"
+        ref={(ref) => {
+          setContainer(ref);
+        }}
+      >
+        <PageContent />
+      </div>
+      <Footer />
     </div>
   );
 }
