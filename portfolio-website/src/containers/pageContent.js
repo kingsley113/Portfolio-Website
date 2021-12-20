@@ -1,9 +1,11 @@
 import React from "react";
+import SoftwareProjects from "./softwareProjects";
 
 const PageContent = () => {
   return (
-    <React.Fragment>
-      <h1>This is where all of the meat and potatoes will go!</h1>
+    // <React.Fragment>
+    <div className="flex-horizontal">
+      {/* <h1>This is where all of the meat and potatoes will go!</h1> */}
       <div className="glow">
         <h1 id="ck-name">Cameron James Kingsley</h1>
       </div>
@@ -70,7 +72,9 @@ const PageContent = () => {
           nisl.
         </p>
       </div>
-    </React.Fragment>
+      <SoftwareProjects />
+    </div>
+    // {/* </React.Fragment> */}
   );
 };
 

@@ -50,11 +50,11 @@ body {
 .container {
   margin-bottom: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .wide-test {
-  width: 6000px;
+  width: 1200px;
   /* display: flex; */
   /* flex: 1; */
   /* height: 100%; */
@@ -74,4 +74,16 @@ body {
 #ck-name {
   font-family: "Rajdhani", sans-serif;
   font-size: 80pt;
+}
+
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-card {
+  width: 400px;
+  height: 100%;
+  border: 1px solid red;
+  box-sizing: border-box;
 }
