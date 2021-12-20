@@ -5,7 +5,9 @@ import { softwareProjects as projects } from "../data/data";
 
 const SoftwareProjects = () => {
   // Software project cards
-  const cards = projects.map((project) => <ProjectCard project={project} />);
+  const cards = projects.map((project) => (
+    <ProjectCard project={project} key={project.id} />
+  ));
   return <div className="flex-horizontal">{cards}</div>;
 };
 

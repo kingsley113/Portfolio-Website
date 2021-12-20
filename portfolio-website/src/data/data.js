@@ -1,11 +1,13 @@
 export const softwareProjects = [
   {
+    id: "1",
     name: "cyberbug",
     description: "an app for solving software bugs",
     stack: "React, Rails",
     image: "https://picsum.photos/400",
   },
   {
+    id: "2",
     name: "who are you?",
     description: "an app for finding your rpg background",
     stack: "Javascript, Rails",

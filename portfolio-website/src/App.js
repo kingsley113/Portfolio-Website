@@ -23,7 +23,6 @@ function App() {
         <PageContent />
       </div>
       <Footer />
-      {console.log(window.scrollX)}
     </div>
   );
 }
