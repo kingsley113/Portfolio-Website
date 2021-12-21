@@ -2,6 +2,8 @@ import "./App.css";
 import useHorizontal from "@oberon-amsterdam/horizontal/hook";
 import React, { useState } from "react";
 
+import { Parallax } from "react-scroll-parallax";
+
 import Header from "./containers/header";
 import Footer from "./containers/footer";
 import PageContent from "./containers/pageContent";
@@ -21,10 +23,16 @@ function App() {
           setContainer(ref);
         }}
       >
+        {/* <Parallax
+          offsetXMax={-40}
+          offsetXMin={20}
+          // className="no-background"
+        > */}
         <PageContent />
+        {/* </Parallax> */}
       </div>
       <Footer />
-      <Background />
+      {/* <Background /> */}
     </div>
   );
 }

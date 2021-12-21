@@ -1,15 +1,26 @@
 import React from "react";
-import SoftwareProjects from "./softwareProjects";
+import { Parallax } from "react-scroll-parallax";
+import AboutMeCard from "../components/main/aboutMeCard";
+import Background from "../components/main/background";
+import AboutMePanel from "./aboutMePanel";
+import SoftwareProjectsPanel from "./softwareProjectsPanel";
 
 const PageContent = () => {
   return (
     // <React.Fragment>
     <div className="flex-horizontal">
+      {/* <Parallax
+        x={[100, -40]}
+        // offsetXMax={-40} offsetXMin={20}
+      > */}
+      <Background />
+      {/* </Parallax> */}
       {/* <h1>This is where all of the meat and potatoes will go!</h1> */}
-      <div className="glow">
+      {/* <div className="glow">
         <h1 id="ck-name">Cameron James Kingsley</h1>
-      </div>
-      <div className="wide-test">
+      </div> */}
+      <div id="home-filler-panel"></div>
+      {/* <div className="wide-test">
         <p>
           This is a test box to see if the scroll works Lorem ipsum dolor sit
           amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -71,8 +82,21 @@ const PageContent = () => {
           ornare suspendisse sed nisi. Nibh tortor id aliquet lectus proin nibh
           nisl.
         </p>
-      </div>
-      <SoftwareProjects />
+      </div> */}
+      {/* <Parallax
+        x={[100, -40]}
+        // offsetXMax={-40} offsetXMin={20}
+      > */}
+
+      {/* <AboutMeCard /> */}
+      <AboutMePanel />
+      {/* </Parallax>
+      <Parallax
+        x={[100, 40]}
+        // offsetXMax={-40} offsetXMin={20}
+      > */}
+      <SoftwareProjectsPanel />
+      {/* </Parallax> */}
     </div>
     // {/* </React.Fragment> */}
   );

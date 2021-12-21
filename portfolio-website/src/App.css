@@ -61,8 +61,19 @@ body {
   /* margin-bottom: auto; */
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
 .footer {
   /* margin-top: auto; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
 }
 
 /* Name */
@@ -105,4 +116,40 @@ body {
   position: absolute;
   /* Adjust this to position video */
   left: -250px;
+}
+
+.about-card {
+  width: 500px;
+  height: 100%;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.parallax-outer .no-background {
+  /* background: none; */
+  background-color: red;
+}
+
+#home-filler-panel {
+  width: calc(100vw - 80px);
+  max-width: 1500px;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.section-divider {
+  background-color: white;
+  color: grey;
+  height: 100vh;
+  width: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-text {
+  font-size: 18pt;
+  writing-mode: vertical-rl;
+  margin: 0;
 }
