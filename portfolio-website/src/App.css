@@ -115,7 +115,7 @@ body {
   height: 100%;
   position: absolute;
   /* Adjust this to position video */
-  left: -250px;
+  left: -350px;
 }
 
 .about-card {
@@ -131,7 +131,7 @@ body {
 }
 
 #home-filler-panel {
-  width: calc(100vw - 80px);
+  width: calc(100vw - 60px);
   max-width: 1500px;
   border: 1px solid red;
   box-sizing: border-box;
@@ -146,10 +146,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  filter: drop-shadow(0px 0px 15px rgba(241, 134, 187, 0.685));
+  clip-path: polygon(-50px 100%, -50px 0%, 100% 0%, 100% 100%);
 }
 
 .divider-text {
   font-size: 18pt;
   writing-mode: vertical-rl;
   margin: 0;
+}
+
+.solid-background {
+  background-color: black;
 }
