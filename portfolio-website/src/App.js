@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Header from "./containers/header";
 import Footer from "./containers/footer";
 import PageContent from "./containers/pageContent";
+import Background from "./components/main/background";
 
 function App() {
   // Setup Horizontal Scroll
@@ -23,6 +24,7 @@ function App() {
         <PageContent />
       </div>
       <Footer />
+      <Background />
     </div>
   );
 }

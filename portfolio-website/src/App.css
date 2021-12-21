@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
 
 body {
-  background-color: black;
+  /* background-color: black; */
   color: white;
 }
 
@@ -86,4 +86,23 @@ body {
   height: 100%;
   border: 1px solid red;
   box-sizing: border-box;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+  /* background-color: red; */
+  background: linear-gradient(to top, rgb(36, 36, 36), 10%, black 25%, black);
+  overflow: hidden;
+}
+
+#background-video {
+  height: 100%;
+  position: absolute;
+  /* Adjust this to position video */
+  left: -250px;
 }
