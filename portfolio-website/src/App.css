@@ -139,6 +139,13 @@ body {
   box-sizing: border-box;
 }
 
+.blog-card {
+  width: 500px;
+  height: 100%;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
 .parallax-outer .no-background {
   /* background: none; */
   background-color: red;
