@@ -1,6 +1,11 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
 
+/* CUSTOM PROPERTES*/
+:root {
+  --header-height: 60px;
+}
+
 body {
   /* background-color: black; */
   color: white;
@@ -62,10 +67,19 @@ body {
 }
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  --header-color: rgb(0, 0, 0);
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
   z-index: 5;
+  height: var(--header-height);
+  background-color: var(--header-color);
+  border-bottom: 2px solid rgb(193, 232, 250);
+
+  filter: drop-shadow(0px 0px 5px var(--header-color));
+
+  display: flex;
+  align-items: center;
 }
 
 .footer {
@@ -133,14 +147,14 @@ body {
 #home-filler-panel {
   width: calc(100vw - 60px);
   max-width: 1500px;
-  border: 1px solid red;
-  box-sizing: border-box;
+  /* border: 1px solid red; */
+  /* box-sizing: border-box; */
 }
 
 .section-divider {
   background-color: white;
   color: grey;
-  height: 100vh;
+  height: calc(100vh - var(--header-height));
   width: 60px;
 
   display: flex;
