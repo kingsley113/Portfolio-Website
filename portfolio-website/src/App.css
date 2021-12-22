@@ -146,6 +146,29 @@ body {
   box-sizing: border-box;
 }
 
+.timeline-card {
+  width: 500px;
+  height: 100%;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.contact-panel {
+  width: 500px;
+  height: 100%;
+  border: 1px solid red;
+  box-sizing: border-box;
+  background-color: grey;
+}
+
+.resume-panel {
+  width: 500px;
+  height: 100%;
+  border: 1px solid red;
+  box-sizing: border-box;
+  background-color: grey;
+}
+
 .parallax-outer .no-background {
   /* background: none; */
   background-color: red;

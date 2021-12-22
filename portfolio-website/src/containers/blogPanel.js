@@ -5,7 +5,7 @@ const BlogPanel = () => {
   return (
     <React.Fragment>
       <SectionDivider text="Blogs" />
-      <div className="blog-card solid-background"></div>
+      <div className="blog-card solid-background">Blog Content Here</div>
     </React.Fragment>
   );
 };
