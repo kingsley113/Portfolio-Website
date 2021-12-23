@@ -238,15 +238,26 @@ body {
 
 /* FEATURE SIGN */
 .sign-feature-image {
+  position: absolute;
   height: 100%;
   /* max-width: 80%; */
   overflow: hidden;
+  /* box-sizing: border-box; */
 }
 
 #feature-image-container {
   width: calc(100vw - 60px);
   max-width: 1500px;
   height: 100%;
+  position: relative;
   /* border: 1px solid red; */
   /* box-sizing: border-box; */
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
 }

@@ -16,7 +16,7 @@ const Background = (props) => {
 
   return (
     <div id="background">
-      {console.log(props.position)}
+      {/* {console.log(props.position)} */}
       {/* <video
         id="background-video"
         loop
