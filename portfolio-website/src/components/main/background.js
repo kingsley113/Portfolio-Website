@@ -1,31 +1,42 @@
-import React from "react";
+import React, { Component } from "react";
 import { Parallax } from "react-scroll-parallax";
 import Particles from "react-tsparticles";
 
-const Background = () => {
-  const particlesInit = (main) => {
-    console.log(main);
+class Background extends Component {
+  state = {
+    container: document.getElementById("container"),
   };
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  // const particlesInit = (main) => {
+  //   console.log(main);
+  // };
 
-  return (
-    // <Parallax
-    //   x={[100, -20]}
-    //   y={[0, 0]}
-    //   // offsetXMax={-40} offsetXMin={20}
-    // >
-    <div id="background">
-      <video id="background-video" loop autoPlay muted>
-        <source src="./video/websiteNeonBackground.mp4" type="video/mp4" />
-      </video>
-    </div>
-    // </Parallax>
-    // </Parallax>
-  );
-};
+  // const particlesLoaded = (container) => {
+  //   console.log(container);
+  // };
+
+  // const container = document.getElementById("container");
+
+  // container.addEventListener("scroll", function () {
+  //   console.log(this.scrollLeft);
+  // });
+  render() {
+    return (
+      // <Parallax
+      //   x={[100, -20]}
+      //   y={[0, 0]}
+      //   // offsetXMax={-40} offsetXMin={20}
+      // >
+      <div id="background">
+        <video id="background-video" loop autoPlay muted>
+          <source src="./video/websiteNeonBackground.mp4" type="video/mp4" />
+        </video>
+      </div>
+      // </Parallax>
+      // </Parallax>
+    );
+  }
+}
 
 export default Background;
 
