@@ -88,6 +88,25 @@ body {
   bottom: 0;
   left: 0;
   z-index: 5;
+
+  --header-color: rgb(0, 0, 0);
+  height: var(--header-height);
+  background-color: var(--header-color);
+  border-top: 2px solid rgb(193, 232, 250);
+  filter: drop-shadow(0px 0px 5px var(--header-color));
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
 }
 
 /* Name */
@@ -191,6 +210,8 @@ body {
   justify-content: center;
   align-items: center;
 
+  margin-left: 100px;
+
   filter: drop-shadow(0px 0px 15px rgba(241, 134, 187, 0.685));
   clip-path: polygon(-50px 100%, -50px 0%, 100% 0%, 100% 100%);
 }
@@ -202,5 +223,5 @@ body {
 }
 
 .solid-background {
-  background-color: black;
+  background-color: rgba(39, 39, 39, 0.918);
 }
