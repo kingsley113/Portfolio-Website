@@ -14,6 +14,21 @@ function App() {
   const [container, setContainer] = useState();
   useHorizontal({ container: container });
 
+  // Setup Scrolling Parallax
+  const [scrollPos, setScrollPos] = useState();
+  // let scrollContainer;
+
+  // window.addEventListener("DomContentLoaded", (event) => {
+  //   scrollContainer = document.getElementById("container");
+  // });
+
+  const handleScroll = (event) => {
+    // console.log("calling handleScroll function");
+    setScrollPos(container.scrollLeft);
+    // console.log(container.scrollLeft);
+    // console.log(scrollPos);
+  };
+
   return (
     <div className="App">
       {/* <Header /> */}
@@ -23,6 +38,7 @@ function App() {
         ref={(ref) => {
           setContainer(ref);
         }}
+        onScroll={handleScroll}
       >
         {/* <Parallax
           offsetXMax={-40}
@@ -33,7 +49,7 @@ function App() {
         {/* </Parallax> */}
       </div>
       <Footer />
-      <Background />
+      <Background position={scrollPos} />
     </div>
   );
 }

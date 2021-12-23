@@ -149,6 +149,8 @@ body {
   position: absolute;
   /* Adjust this to position video */
   left: -350px;
+  top: 0px;
+  z-index: -5;
 }
 
 .about-card {
@@ -225,3 +227,17 @@ body {
 .solid-background {
   background-color: rgba(39, 39, 39, 0.918);
 }
+
+/* PARALLAX BACKGROUND STYLES */
+.background-layer {
+  position: absolute;
+  transform-origin: bottom left;
+  bottom: 0;
+  /* left: 0%; */
+  z-index: -10;
+}
+
+/* #background-layer-1 {
+  background-image: url("/portfolio-website/public/images/tempBackground-5.png");
+  background-repeat: repeat-x;
+} */
