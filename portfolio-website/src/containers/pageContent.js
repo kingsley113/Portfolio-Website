@@ -16,7 +16,8 @@ const PageContent = () => {
         x={[100, -40]}
         // offsetXMax={-40} offsetXMin={20}
       > */}
-      <Background />
+
+      {/* <Background /> */}
       {/* </Parallax> */}
       <div id="home-filler-panel"></div>
       {/* <Parallax
