@@ -16,9 +16,10 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <div
         className="container"
+        id="container"
         ref={(ref) => {
           setContainer(ref);
         }}
@@ -32,7 +33,7 @@ function App() {
         {/* </Parallax> */}
       </div>
       <Footer />
-      {/* <Background /> */}
+      <Background />
     </div>
   );
 }
