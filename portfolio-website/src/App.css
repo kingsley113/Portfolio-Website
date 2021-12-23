@@ -140,7 +140,8 @@ body {
   height: 100vh;
   z-index: -100;
   /* background-color: red; */
-  background: linear-gradient(to top, rgb(36, 36, 36), 10%, black 25%, black);
+  /* background: linear-gradient(to top, rgb(36, 36, 36), 10%, black 25%, black); */
+  background: linear-gradient(rgb(78, 45, 2), black);
   overflow: hidden;
 }
 
@@ -148,7 +149,7 @@ body {
   height: 100%;
   position: absolute;
   /* Adjust this to position video */
-  left: -350px;
+  /* left: -350px; */
   top: 0px;
   z-index: -5;
 }
@@ -214,8 +215,8 @@ body {
 
   margin-left: 100px;
 
-  filter: drop-shadow(0px 0px 15px rgba(241, 134, 187, 0.685));
-  clip-path: polygon(-50px 100%, -50px 0%, 100% 0%, 100% 100%);
+  /* filter: drop-shadow(0px 0px 15px rgba(241, 134, 187, 0.685)); */
+  /* clip-path: polygon(-50px 100%, -50px 0%, 100% 0%, 100% 100%); */
 }
 
 .divider-text {

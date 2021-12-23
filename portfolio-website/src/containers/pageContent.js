@@ -12,29 +12,14 @@ import TimelinePanel from "./timelinePanel";
 const PageContent = () => {
   return (
     <div className="flex-horizontal">
-      {/* <Parallax
-        x={[100, -40]}
-        // offsetXMax={-40} offsetXMin={20}
-      > */}
-
-      {/* <Background /> */}
-      {/* </Parallax> */}
+      {/* TODO: Make Component for foreground building and name sign, this will replace the 'home-filler-panel' */}
       <div id="home-filler-panel"></div>
-      {/* <Parallax
-        x={[100, -40]}
-        // offsetXMax={-40} offsetXMin={20}
-      > */}
-
       <AboutMePanel />
       <SoftwareProjectsPanel />
-      {/* Blog Links */}
       <BlogPanel />
-      {/* Personal Timeline */}
       <TimelinePanel />
-      {/* Resume */}
       <ResumePanel />
-      {/* Instagram Photo Feed */}
-      {/* Contact */}
+      {/* TODO: Instagram Photo Feed */}
       <ContactPanel />
     </div>
   );

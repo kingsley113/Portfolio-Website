@@ -24,7 +24,7 @@ const Background = (props) => {
         muted
         style={{ left: props.position * -1 }}
       >
-        <source src="./video/websiteNeonBackground.mp4" type="video/mp4" />
+        <source src="./video/NeonSignTest.mp4" type="video/mp4" />
       </video>
       <img
         src="./images/tempBackground-2.png"
@@ -46,11 +46,11 @@ const Background = (props) => {
         className="background-layer"
         style={{ left: props.position * -0.75 }}
       />
-      {/* <div
-        id="background-layer-1"
-        className="background-layer"
-        style={{ left: props.position * -0.75 }}
-      /> */}
+      <div
+      // id="background-layer-1"
+      // className="background-layer"
+      // style={{ left: props.position * -0.75 }}
+      />
     </div>
   );
 };
