@@ -17,7 +17,7 @@ const Background = (props) => {
   return (
     <div id="background">
       {console.log(props.position)}
-      <video
+      {/* <video
         id="background-video"
         loop
         autoPlay
@@ -25,7 +25,7 @@ const Background = (props) => {
         style={{ left: props.position * -1 }}
       >
         <source src="./video/NeonSignTest.mp4" type="video/mp4" />
-      </video>
+      </video> */}
       <img
         src="./images/tempBackground-2.png"
         className="background-layer"

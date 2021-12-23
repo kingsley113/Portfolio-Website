@@ -2,6 +2,7 @@ import React from "react";
 import { Parallax } from "react-scroll-parallax";
 import AboutMeCard from "../components/main/aboutMeCard";
 import Background from "../components/main/background";
+import FeatureSign from "../components/main/featureSign";
 import AboutMePanel from "./aboutMePanel";
 import BlogPanel from "./blogPanel";
 import ContactPanel from "./contactPanel";
@@ -13,7 +14,8 @@ const PageContent = () => {
   return (
     <div className="flex-horizontal">
       {/* TODO: Make Component for foreground building and name sign, this will replace the 'home-filler-panel' */}
-      <div id="home-filler-panel"></div>
+      <FeatureSign />
+      {/* <div id="home-filler-panel"></div> */}
       <AboutMePanel />
       <SoftwareProjectsPanel />
       <BlogPanel />
