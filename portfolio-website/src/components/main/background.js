@@ -26,31 +26,51 @@ const Background = (props) => {
       >
         <source src="./video/NeonSignTest.mp4" type="video/mp4" />
       </video> */}
+
+      {/* Vertically Scrolling background layer, for sunrise effect */}
       <img
-        src="./images/tempBackground-2.png"
+        src="./images/background-5-background.png"
+        className="background-layer-gradient"
+        style={{ top: props.position * -0.1 }}
+        alt=""
+      />
+      {/* Parallax background layers */}
+      <img
+        src="./images/background-4.png"
+        className="background-layer"
+        style={{ left: props.position * -0.05 }}
+        alt=""
+      />
+      <img
+        src="./images/background-3.png"
         className="background-layer"
         style={{ left: props.position * -0.1 }}
+        alt=""
       />
       <img
-        src="./images/tempBackground-3.png"
+        src="./images/background-2.png"
         className="background-layer"
-        style={{ left: props.position * -0.25 }}
+        style={{ left: props.position * -0.2 - 70 }}
+        alt=""
       />
       <img
-        src="./images/tempBackground-4.png"
+        src="./images/background-1-front.png"
         className="background-layer"
-        style={{ left: props.position * -0.5 }}
+        style={{ left: props.position * -0.4 }}
+        alt=""
       />
-      <img
-        src="./images/tempBackground-5.png"
+
+      <div className="color-overlay"></div>
+
+      {/* <div
+        id="background-layer-1"
         className="background-layer"
-        style={{ left: props.position * -0.75 }}
-      />
-      <div
-      // id="background-layer-1"
-      // className="background-layer"
-      // style={{ left: props.position * -0.75 }}
-      />
+        style={{
+          left: props.position * -0.75,
+          backgroundImage: "url('/images/tempBackground-3.png')",
+          backgroundRepeat: "repeat - x",
+        }}
+      ></div> */}
     </div>
   );
 };

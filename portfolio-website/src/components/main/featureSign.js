@@ -11,17 +11,17 @@ class FeatureSign extends Component {
         <div id="feature-image-container">
           <img
             id="sign-off"
-            src="./images/signOff.png"
+            src="./images/finalSignOff.png"
             className="sign-feature-image"
           />
           <img
             id="sign-on"
-            src="./images/signOnFull.png"
+            src="./images/finalSignOn.png"
             className="sign-feature-image hidden"
           />
           <img
             id="sign-on-james-off"
-            src="./images/signOnJamesOff.png"
+            src="./images/finalSignOnJamesOff.png"
             className="sign-feature-image hidden"
           />
         </div>
