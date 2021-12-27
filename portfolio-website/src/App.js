@@ -15,7 +15,8 @@ function App() {
   useHorizontal({ container: container });
 
   // Setup Scrolling Parallax
-  const [scrollPos, setScrollPos] = useState();
+  const [scrollPos, setScrollPos] = useState(0);
+  // setScrollPos(0);
   // let scrollContainer;
 
   // window.addEventListener("DomContentLoaded", (event) => {
