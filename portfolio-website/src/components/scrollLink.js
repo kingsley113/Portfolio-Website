@@ -6,7 +6,7 @@ class ScrollLink extends Component {
     position: 0,
     container: null,
     pageContent: null,
-    scrollOffset: 100,
+    scrollOffset: null,
   };
   componentDidMount() {
     const element = document.getElementById(`${this.props.id}`);
@@ -14,6 +14,7 @@ class ScrollLink extends Component {
       position: element.getBoundingClientRect().left,
       container: document.getElementById("container"),
       pageContent: document.getElementById("page-content"),
+      scrollOffset: window.innerWidth / 2 - 200,
     });
   }
 
@@ -38,26 +39,28 @@ class ScrollLink extends Component {
   }
 
   setActiveStyle() {
-    if (this.state.container && this.state.position) {
+    // console.log(this.props.id);
+    // console.log(this.state.container, this.state.position);
+    if (this.state.container) {
+      // console.log("inside if statement");
       const { container, position, scrollOffset, pageContent } = this.state;
-      // console.log(position);
+      // console.log(container.scrollLeft + window.innerWidth / 2, position);
       if (
-        container.scrollLeft + window.innerWidth / 2 >=
-          position - scrollOffset ||
+        container.scrollLeft + window.innerWidth / 2 >= position - 200 ||
         container.scrollLeft + window.innerWidth >= pageContent.offsetWidth - 2
         // Small buffer to trigger just before page end
       ) {
         // console.log(`setting ${this.props.id} to active.`);
         return "nav-icon-active";
       } else {
-        console.log(
-          this.props.id,
-          ": ",
-          "scroll position: ",
-          container.scrollLeft + window.innerWidth,
-          "page width ",
-          pageContent.offsetWidth
-        );
+        // console.log(
+        //   this.props.id,
+        //   ": ",
+        //   "scroll position: ",
+        //   container.scrollLeft + window.innerWidth,
+        //   "page width ",
+        //   pageContent.offsetWidth
+        // );
         // console.log("viewport width", window.innerWidth);
         // console.log(`setting ${this.props.id} to inactive.`);
         return "nav-icon";
