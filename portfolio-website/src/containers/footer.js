@@ -10,3 +10,9 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// Get id for element to scroll to
+// use this to scroll: scrollTo({ left: x, behavior: "smooth" });
+// Have icon trigger a scroll to function
+// find offset to get elements to scroll to middle of page
+//  use element.getBoundingClientRect().left to get the page position of target element

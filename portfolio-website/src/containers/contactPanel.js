@@ -5,7 +5,9 @@ const ContactPanel = () => {
   return (
     <React.Fragment>
       <SectionDivider text="Contact" />
-      <div className="contact-panel">Contact Info Here</div>
+      <div className="contact-panel" id="contact-panel">
+        Contact Info Here
+      </div>
     </React.Fragment>
   );
 };

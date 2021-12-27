@@ -11,7 +11,7 @@ const SoftwareProjectsPanel = () => {
   ));
   return (
     <React.Fragment>
-      <SectionDivider text="Software Portfolio" />
+      <SectionDivider text="Software Portfolio" id="software-panel" />
       <div className="flex-horizontal solid-background">{cards}</div>
     </React.Fragment>
   );
