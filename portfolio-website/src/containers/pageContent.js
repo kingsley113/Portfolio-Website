@@ -12,7 +12,7 @@ import TimelinePanel from "./timelinePanel";
 
 const PageContent = () => {
   return (
-    <div className="flex-horizontal">
+    <div className="flex-horizontal" id="page-content">
       {/* TODO: Make Component for foreground building and name sign, this will replace the 'home-filler-panel' */}
       <FeatureSign />
       {/* <div id="home-filler-panel"></div> */}
