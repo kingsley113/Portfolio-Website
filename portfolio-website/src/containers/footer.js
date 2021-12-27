@@ -1,18 +1,25 @@
 import React from "react";
+import ScrollLink from "../components/scrollLink";
 
 const Footer = () => {
+  const aboutEl = document.getElementById("about-panel");
+  const softwareEl = document.getElementById("software-panel");
+  const homeEl = document.getElementById("feature-image-container");
+
   return (
     <div className="footer">
-      <h2 className="flex-start">Home Portfolio About Blog Resume Contact</h2>
+      <ScrollLink id="feature-image-container" text="Home" />
+      <ScrollLink id="about-panel" text="About" />
+      <ScrollLink id="software-panel" text="Software" />
+      <ScrollLink id="timeline-panel" text="Timeline" />
+      <ScrollLink id="blog-panel" text="Blog" />
+      <ScrollLink id="resume-panel" text="Resume" />
+      <ScrollLink id="contact-panel" text="Contact" />
+
+      {/* TODO: Add footer icons */}
       <h2 className="flex-end"> footer icons here</h2>
     </div>
   );
 };
 
 export default Footer;
-
-// Get id for element to scroll to
-// use this to scroll: scrollTo({ left: x, behavior: "smooth" });
-// Have icon trigger a scroll to function
-// find offset to get elements to scroll to middle of page
-//  use element.getBoundingClientRect().left to get the page position of target element

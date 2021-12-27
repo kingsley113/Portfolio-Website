@@ -5,7 +5,7 @@ import SectionDivider from "../components/sectionDivider";
 const AboutMePanel = () => {
   return (
     <React.Fragment>
-      <SectionDivider text="About Me" id="about-panel" />
+      <SectionDivider text="About Me" />
       <AboutMeCard />
     </React.Fragment>
   );

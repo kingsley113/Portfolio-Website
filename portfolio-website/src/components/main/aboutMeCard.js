@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMeCard = () => {
   return (
-    <div className="about-card solid-background">
+    <div className="about-card solid-background" id="about-panel">
       <h1>About Me</h1>
       <p>This will be the paragraph about who I am</p>
       <div>

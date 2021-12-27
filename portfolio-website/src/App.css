@@ -99,6 +99,7 @@ body {
 
   width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
@@ -307,4 +308,22 @@ body {
 
 .show {
   display: block;
+}
+
+/* NAVBAR */
+
+.nav-icon {
+  background: none;
+  border: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2em;
+  color: white;
+}
+
+.nav-icon:hover {
+  background-color: powderblue;
+}
+
+.nav-icon .active {
+  border-bottom: 2px solid pink;
 }
