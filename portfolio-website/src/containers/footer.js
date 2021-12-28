@@ -2,10 +2,6 @@ import React from "react";
 import ScrollLink from "../components/scrollLink";
 
 const Footer = () => {
-  // const aboutEl = document.getElementById("about-panel");
-  // const softwareEl = document.getElementById("software-panel");
-  // const homeEl = document.getElementById("feature-image-container");
-
   return (
     <div className="footer">
       <ScrollLink id="feature-image-container" text="Home" />
@@ -15,6 +11,7 @@ const Footer = () => {
       <ScrollLink id="timeline-panel" text="Timeline" />
       <ScrollLink id="resume-panel" text="Resume" />
       <ScrollLink id="contact-panel" text="Contact" />
+      <div className="filler-panel"></div>
 
       {/* TODO: Add footer icons */}
       <h2 className="flex-end"> footer icons here</h2>

@@ -5,7 +5,8 @@
 
 /* CUSTOM PROPERTES*/
 :root {
-  --header-height: 60px;
+  --footer-height: 60px;
+  --accent-color: #333366;
 }
 
 body {
@@ -68,22 +69,6 @@ body {
   /* margin-bottom: auto; */
 }
 
-.header {
-  --header-color: rgb(0, 0, 0);
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  z-index: 5;
-  height: var(--header-height);
-  background-color: var(--header-color);
-  border-bottom: 2px solid rgb(193, 232, 250);
-
-  filter: drop-shadow(0px 0px 5px var(--header-color));
-
-  display: flex;
-  align-items: center;
-}
-
 .footer {
   /* margin-top: auto; */
   position: absolute;
@@ -91,9 +76,9 @@ body {
   left: 0;
   z-index: 5;
 
-  --header-color: #333366;
-  height: var(--header-height);
-  background-color: var(--header-color);
+  /* --accent-color: #333366; */
+  height: var(--footer-height);
+  background-color: var(--accent-color);
   /* border-top: 2px solid rgb(193, 232, 250); */
   /* filter: drop-shadow(0px 0px 5px var(--header-color)); */
 
@@ -103,7 +88,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .flex-start {
@@ -209,7 +194,7 @@ body {
 .section-divider {
   background-color: #333366;
   color: rgb(236, 236, 236);
-  height: calc(100vh - var(--header-height));
+  height: calc(100vh - var(--footer-height));
   width: 100px;
 
   position: relative;
@@ -225,7 +210,7 @@ body {
 }
 
 .divider-text {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   /* color: #333366; */
   color: #ff83c7;
   font-size: 45pt;
@@ -278,11 +263,6 @@ body {
   left: 0;
 }
 
-/* #background-layer-1 {
-  background-image: url("/images/tempBackground-5");
-  background-repeat: repeat-x;
-} */
-
 /* FEATURE SIGN */
 .sign-feature-image {
   position: absolute;
@@ -312,19 +292,73 @@ body {
 
 /* NAVBAR */
 
+.nav-icon-container {
+  position: relative;
+  overflow: hidden;
+}
+
 .nav-icon {
   background: none;
   border: none;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2em;
   color: white;
-  box-sizing: border-box;
+  margin: 0 0px 0 50px;
+  transition: 0.2s;
 }
 
 .nav-icon:hover {
   background-color: powderblue;
 }
 
-.active {
-  border-bottom: 2px solid pink;
+.inactive {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  height: 5px;
+  width: 200%;
+  background-color: var(--accent-color);
+  background-color: pink;
+
+  transition: transform 0.2s ease-in;
+  transform: translate(-100%, 0);
+  animation: delayVisibility 1s;
+}
+
+.active.inactive {
+  transition: transform 0.2s ease-in;
+  transform: translate(0, 0);
+}
+
+/* @keyframes slideIn {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+} */
+
+@keyframes delayVisibility {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.filler-panel {
+  margin-right: auto;
 }
