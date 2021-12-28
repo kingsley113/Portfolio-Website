@@ -150,6 +150,7 @@ body {
   /* border: 1px solid red; */
   box-sizing: border-box;
   margin-right: 100px;
+  padding: 5px 20px 5px 0px;
 }
 
 .blog-card {
