@@ -325,17 +325,6 @@ body {
   background-color: powderblue;
 }
 
-.nav-icon .active {
+.active {
   border-bottom: 2px solid pink;
-}
-
-.nav-icon-active {
-  background: none;
-  border: none;
-  border-bottom: 2px solid pink;
-
-  font-family: "Bebas Neue", cursive;
-  font-size: 2em;
-  color: white;
-  box-sizing: border-box;
 }
