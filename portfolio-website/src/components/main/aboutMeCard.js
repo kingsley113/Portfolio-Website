@@ -37,20 +37,48 @@ const AboutMeCard = () => {
         focus in on the details.
       </p> */}
       <div>
-        <h3>Skilz</h3>
-        <ul>
-          <li>React Js: 4/5</li>
-          <li>Javascript: 4/5</li>
-          <li>HTML: 4/5</li>
-          <li>CSS: 3/5</li>
-          <li>Ruby: 3/5</li>
-          <li>Rails: 3/5</li>
-          <li>Python: 1/5</li>
-          <li>Sqlite3: 3/5</li>
-          <li>PostgreSQL: 2/5</li>
-          <li>C# : 2/5</li>
-          <li>C: 1/5</li>
-        </ul>
+        {/* <h3>Skilz</h3> */}
+        <div className="flex-horizontal" id="skills">
+          <div>
+            <div className="flex-horizontal">
+              <h3 className="vertical-text skill-header">Frontend</h3>
+              <ul className="skill-list">
+                <li>React Js</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JSX</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex-horizontal">
+            <h3 className="vertical-text skill-header">Backend</h3>
+            <div>
+              <ul className="skill-list">
+                <li>Ruby</li>
+                <li>Rails</li>
+                <li>Python</li>
+                <li>Sqlite3</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex-horizontal">
+            <h3 className="vertical-text skill-header">Other</h3>
+            <div>
+              <ul className="skill-list">
+                <li>Python (soon!)</li>
+                <li>C# (Unity)</li>
+                <li>C (Ardunio)</li>
+                <li>Unity</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
