@@ -8,9 +8,15 @@ class ProjectCard extends Component {
         {/* {console.log(this.props.project)} */}
         <img src={image} alt="screenshot" />
         {/* TODO: use image carousel? */}
-        <h2>{name}</h2>
-        <p>{description}</p>
-        <p>{stack}</p>
+        <div className="project-details">
+          <h1>{name}</h1>
+          <h3>{stack}</h3>
+          <p>{description}</p>
+        </div>
+        <div className="flex-horizontal project-footer">
+          <div className="project-icon">TODO: git link</div>
+          <div className="project-icon">TODO: link</div>
+        </div>
       </div>
     );
   }
