@@ -74,5 +74,81 @@ export const softwareProjects = [
 
 // TODO: Build this out with all of the info needed
 // TODO: Replace placeholders with real images
-// TODO: Add github links
 // TODO: Add project links
+
+export const timelineEvents = [
+  // TODO: Fill in array of all the timeline events
+  {
+    id: 1,
+    title: "Flatiron SE Program",
+    description: "Started Flatiron School software engineering program",
+    date: "May 2021",
+    image: "TODO:",
+  },
+  {
+    id: 2,
+    title: "Fallout Cascadia Development Team",
+    description:
+      "Joined and currently part of the Fallout Cascadia game development team of roughly 50 active members",
+    date: "June 2021 - Present",
+    image: "TODO:",
+  },
+  {
+    id: 3,
+    title: "Released Fallout 4 Mod 'The Crocodile Club'",
+    description:
+      "Created and released my first mod for Fallout 4 on PC, Xbox & PS4. This was a recreation of the iconic 'Crocodile' concert venue in Seattle. This mod recieved great feeback and enjoyed by many.",
+    date: "May 2021",
+    image: "TODO:",
+  },
+  {
+    id: 4,
+    title: "Custom Ukulele Build",
+    description:
+      "This project was a custom Ukulele for my wife. I always wanted to build an acoustic instrument from scratch, and with this, taught myself how. It turned out fantastic and is one of the best sounding instruments we own.",
+    date: "July 2020",
+    image: "TODO:",
+  },
+  {
+    id: 5,
+    title: "Swinerton Conference Tables",
+    description:
+      "My largest commisions to date, Swinerton wanted two new 16ft conference tables for thier offices, Built 100% from scratch these are made from walnut with steel inlay and blackened industrial style steel legs",
+    date: "Jan 2019",
+    image: "TODO:",
+  },
+  {
+    id: 6,
+    title: "Started Studio One Three",
+    description:
+      "With my side projects taking off, I decided to make it official and start my company Studio One Three. I handle all my side work and custom commissions though this company.",
+    date: "Dec 2018",
+    image: "TODO:",
+  },
+  {
+    id: 7,
+    title: "Sprinter Van Build",
+    description:
+      "As always, looking for more challenging projects, we purchased a barebones sprinter van and build out a complete camper van with custom woodwork, wiring, electrical, plumbing, etc.",
+    date: "2018 - 2019",
+    image: "TODO:",
+  },
+  {
+    id: 8,
+    title: "1st Place ASC Student Competition",
+    description:
+      "During my final year at University of Washington, I competed on UW's Heavy Civil team at the Reno ASC Construction Student Competition, Our team placed 1st place out of schools across the US. We were presented with a set of drawings for a real world project and were to prepare a project plan including an estimate, schedule, and construction approach.",
+    date: "2013",
+    image: "TODO:",
+  },
+];
+
+// Furniture Studio
+// Architecture Designs
+// Formula SAE
+// Kart Racing
+// Ferris-turney
+// Swinerton
+// Stellar J
+// Granite
+// Warhammer
