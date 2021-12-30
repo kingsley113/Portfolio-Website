@@ -1,6 +1,6 @@
 import React from "react";
 import SectionDivider from "../components/sectionDivider";
-import Timeline from "../components/timeline";
+import Timeline from "../components/timeline/timeline";
 
 const TimelinePanel = () => {
   return (
