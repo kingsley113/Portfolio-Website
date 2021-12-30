@@ -153,7 +153,7 @@ body {
   width: 100%;
 }
 
-.project-card img {
+.project-thumbnail {
   width: 100%;
   max-height: 30%;
   object-fit: cover;
@@ -175,6 +175,19 @@ body {
 
 .project-icon {
   padding: 0 10px 0 10px;
+
+  width: 40px;
+  height: 40px;
+  /* object-fit: contain; */
+  /* margin: 0 10px; */
+  transition: 0.3s;
+}
+
+.project-icon:hover {
+  /* background-color: rgba(255, 192, 203, 0.473); */
+  /* TODO: color */
+  /* border-radius: 50%; */
+  filter: drop-shadow(0px 0px 5px pink);
 }
 
 .project-details h1 {
