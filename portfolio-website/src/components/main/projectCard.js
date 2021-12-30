@@ -22,10 +22,18 @@ class ProjectCard extends Component {
             className="project-icon"
             onClick={() => window.open(githubLink)}
           />
-          <div className="project-icon">TODO: link</div>
+          <div className="project-link" onClick={() => this.handleClick()}>
+            Visit Project
+          </div>
+          {/* TODO: Add Link to real project page */}
         </div>
       </div>
     );
+  }
+
+  handleClick() {
+    // TODO: get real links to projects once hosted
+    console.log("Link clicked, but theres nothing to link to... yet...");
   }
 }
 

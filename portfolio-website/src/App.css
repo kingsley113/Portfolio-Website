@@ -164,7 +164,7 @@ body {
   width: 100%;
   margin: 5px 0 5px 0;
 
-  color: red;
+  /* color: red; */
   bottom: 0px;
 
   background-color: var(--background-color);
@@ -205,6 +205,26 @@ body {
 
 .project-description {
   overflow-y: scroll;
+}
+
+.project-link {
+  width: 130px;
+  height: 35px;
+  /* background-color: var(--accent-color); */
+  font-size: 1.2em;
+  color: white;
+  border: 2px solid pink;
+  border-radius: 3px;
+  transition: 0.4s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-link:hover {
+  color: var(--background-color);
+  background-color: pink;
 }
 
 #background {
