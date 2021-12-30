@@ -207,3 +207,14 @@ export const timelineEvents = [
 // Stellar J
 // Granite
 // Warhammer
+
+export const links = {
+  github: "https://github.com/kingsley113",
+  linkedin: "https://www.linkedin.com/in/cameron-kingsley-380a9566/",
+  facebook: "TODO:",
+  instagram: "https://www.instagram.com/studio.one.three/",
+  twitter: "TODO:",
+  resume: "TODO:",
+  email: "cameron.kingsley13@gmail.com",
+  youtube: "TODO:",
+};

@@ -1,6 +1,8 @@
 import React from "react";
 import ScrollLink from "../components/scrollLink";
 
+import { links } from "../data/data";
+
 const Footer = () => {
   return (
     <div className="footer">
@@ -12,9 +14,25 @@ const Footer = () => {
       <ScrollLink id="resume-panel" text="Resume" />
       <ScrollLink id="contact-panel" text="Contact" />
       <div className="filler-panel"></div>
-
       {/* TODO: Add footer icons */}
-      <h2 className="flex-end"> footer icons here</h2>
+      <img
+        src="./icons/GitHub-Mark-Light-64px.png"
+        alt="Github Mark"
+        className="footer-icon"
+        onClick={() => window.open(links.github)}
+      />
+      <img
+        src="./icons/LI-In-Bug.png"
+        alt="Linkedin Icon"
+        className="footer-icon"
+        onClick={() => window.open(links.linkedin)}
+      />
+      <img
+        src="./icons/glyph-logo_May2016.png"
+        alt="Instagram Icon"
+        className="footer-icon"
+        onClick={() => window.open(links.instagram)}
+      />
     </div>
   );
 };
