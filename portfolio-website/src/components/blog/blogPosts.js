@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-// import { fetchBlogPosts } from "./blogHelpers";
-
 class BlogPosts extends Component {
   state = {
     posts: [],
@@ -11,15 +9,34 @@ class BlogPosts extends Component {
     this.fetchBlogPosts();
   }
 
+  render() {
+    if (this.state.posts) {
+      return <div>{this.renderPosts()}</div>;
+    } else {
+      return <h1>Loading...</h1>;
+    }
+  }
+
   renderPosts() {
     const posts = this.state.posts.map((post) => {
       const date = new Date(post.pubDate);
-      console.log(date);
       return (
-        <li>
-          <h2 key={post.guid}>{post.title}</h2>
-          <p>{date.toDateString()}</p>
-          {/* <div className="blog-post-content">{post.content}</div> */}
+        <li
+          className="flex-horizontal blog-line-item"
+          onClick={() => this.handleClick(post.link)}
+          key={post.guid}
+        >
+          <div>
+            <img
+              className="blog-thumbnail"
+              src={post.thumbnail}
+              alt="blog-image"
+            ></img>
+          </div>
+          <div>
+            <h2>{post.title}</h2>
+            <p>{date.toDateString()}</p>
+          </div>
         </li>
       );
     });
@@ -27,13 +44,8 @@ class BlogPosts extends Component {
     return <ul>{posts}</ul>;
   }
 
-  render() {
-    // console.log(this.state.posts);
-    if (this.state.posts) {
-      return <div>{this.renderPosts()}</div>;
-    } else {
-      return <h1>Loading...</h1>;
-    }
+  handleClick(link) {
+    window.open(link);
   }
 
   fetchBlogPosts() {
@@ -44,7 +56,6 @@ class BlogPosts extends Component {
         return response.json();
       })
       .then((json) => {
-        console.log(json.items);
         this.setState({
           posts: json.items,
         });

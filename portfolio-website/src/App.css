@@ -196,14 +196,6 @@ body {
   padding: 5px 20px 5px 0px;
 }
 
-.blog-card {
-  width: 500px;
-  height: 100%;
-  /* border: 1px solid red; */
-  box-sizing: border-box;
-  margin-right: 100px;
-}
-
 .timeline-card {
   /* width: 500px; */
   height: 100%;
@@ -508,9 +500,44 @@ body {
   margin: 0 0 0 3px;
 }
 
-/* BLOG POSTS */
+/* ****************BLOG POSTS*************** */
+.blog-card {
+  width: 600px;
+  height: 100%;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  margin-right: 100px;
+}
+
 .blog-post-content {
   height: 4em;
   overflow: hidden;
   margin: 0 2px 0 2px;
+}
+
+.blog-thumbnail {
+  width: 150px;
+  margin: 10px 10px 10px 0;
+  /* max-height: 150px; */
+}
+
+.blog-line-item {
+  /* margin: 10px 0 10px 0; */
+  /* border-bottom: 2px solid pink; */
+  align-items: center;
+
+  transition: 0.5s;
+}
+
+.blog-line-item:hover {
+  background-color: rgba(255, 192, 203, 0.205);
+  /* TODO: make this the real color or variable */
+}
+
+.blog-line-item h2 {
+  margin-bottom: 0;
+}
+.blog-line-item p {
+  margin: 0 0 10px 0;
+  font-size: 0.75em;
 }

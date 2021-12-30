@@ -10,7 +10,6 @@ const BlogPanel = () => {
     <React.Fragment>
       <SectionDivider text="Blogs" />
       <div className="blog-card solid-background" id="blog-panel">
-        Blog Content Here
         <BlogPosts />
       </div>
     </React.Fragment>
