@@ -507,3 +507,10 @@ body {
 .timeline-event-card-btm p {
   margin: 0 0 0 3px;
 }
+
+/* BLOG POSTS */
+.blog-post-content {
+  height: 4em;
+  overflow: hidden;
+  margin: 0 2px 0 2px;
+}
