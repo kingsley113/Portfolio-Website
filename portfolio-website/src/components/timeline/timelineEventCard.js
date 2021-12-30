@@ -5,13 +5,13 @@ const TimelineEventCard = (props) => {
   // Events on top of the timeline
   if (props.position === "top") {
     const componentStyle = {
-      // bottom: props.vert,
       left: props.left,
       height: props.height,
     };
     return (
       <div className="timeline-event-card-top" style={componentStyle}>
         <h2>{props.event.title}</h2>
+        <p>{props.event.date}</p>
         <p>{props.event.description}</p>
       </div>
     );
@@ -20,7 +20,6 @@ const TimelineEventCard = (props) => {
   // Events on bottom of the timeline
   if (props.position === "btm") {
     const componentStyle = {
-      // top: props.vert,
       left: props.left,
       height: props.height,
     };
@@ -28,6 +27,7 @@ const TimelineEventCard = (props) => {
       <div className="timeline-event-card-btm" style={componentStyle}>
         <div className="filler-top"></div>
         <h2>{props.event.title}</h2>
+        <p>{props.event.date}</p>
         <p>{props.event.description}</p>
       </div>
     );

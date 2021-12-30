@@ -81,17 +81,18 @@ export const timelineEvents = [
   {
     id: 1,
     title: "Flatiron SE Program",
-    description: "Started Flatiron School software engineering program",
-    date: "May 2021",
-    image: "TODO:",
+    description:
+      "Completed Flatiron School Full Stack Software Engineering program. I built several projects using React, JavaScript, Ruby, Rails, PostgreSQL and MongoDB.",
+    date: "May - Dec 2021",
+    link: "TODO:",
   },
   {
     id: 2,
     title: "Fallout Cascadia Development Team",
     description:
-      "Joined and currently part of the Fallout Cascadia game development team of roughly 50 active members",
+      "Joined and currently part of the Fallout Cascadia game development team of roughly 50 active members. Fallout Cascadia is a mod to completely rebuild Fallout 4 into the Seattle region.",
     date: "June 2021 - Present",
-    image: "TODO:",
+    link: "TODO:",
   },
   {
     id: 3,
@@ -99,7 +100,7 @@ export const timelineEvents = [
     description:
       "Created and released my first mod for Fallout 4 on PC, Xbox & PS4. This was a recreation of the iconic 'Crocodile' concert venue in Seattle. This mod recieved great feeback and enjoyed by many.",
     date: "May 2021",
-    image: "TODO:",
+    link: "TODO:",
   },
   {
     id: 4,
@@ -107,7 +108,7 @@ export const timelineEvents = [
     description:
       "This project was a custom Ukulele for my wife. I always wanted to build an acoustic instrument from scratch, and with this, taught myself how. It turned out fantastic and is one of the best sounding instruments we own.",
     date: "July 2020",
-    image: "TODO:",
+    link: "TODO:",
   },
   {
     id: 5,
@@ -115,7 +116,7 @@ export const timelineEvents = [
     description:
       "My largest commisions to date, Swinerton wanted two new 16ft conference tables for thier offices, Built 100% from scratch these are made from walnut with steel inlay and blackened industrial style steel legs",
     date: "Jan 2019",
-    image: "TODO:",
+    link: "TODO:",
   },
   {
     id: 6,
@@ -123,7 +124,7 @@ export const timelineEvents = [
     description:
       "With my side projects taking off, I decided to make it official and start my company Studio One Three. I handle all my side work and custom commissions though this company.",
     date: "Dec 2018",
-    image: "TODO:",
+    link: "TODO:",
   },
   {
     id: 7,
@@ -131,21 +132,75 @@ export const timelineEvents = [
     description:
       "As always, looking for more challenging projects, we purchased a barebones sprinter van and build out a complete camper van with custom woodwork, wiring, electrical, plumbing, etc.",
     date: "2018 - 2019",
-    image: "TODO:",
+    link: "TODO:",
   },
   {
     id: 8,
     title: "1st Place ASC Student Competition",
     description:
-      "During my final year at University of Washington, I competed on UW's Heavy Civil team at the Reno ASC Construction Student Competition, Our team placed 1st place out of schools across the US. We were presented with a set of drawings for a real world project and were to prepare a project plan including an estimate, schedule, and construction approach.",
+      "I competed on UW's Heavy Civil team at the Reno ASC Competition, Our team placed 1st out of schools across the US. We were presented with a set of drawings and prepared a project plan including an estimate, schedule, and construction approach.",
+    date: "2014",
+    link: "TODO:",
+  },
+  {
+    id: 9,
+    title: "UW Digital Fabrication Studio",
+    description:
+      "This course brought together the world of design, fabrication, and code, with a focus on designing products using CNC, 3D printing, Arduino microcontrollers, etc.",
+    date: "2014",
+    link: "TODO:",
+  },
+  {
+    id: 10,
+    title: "UW Formula SAE Team",
+    description:
+      "This was one of my first experiences working with a highly talented multi diciplined team. My role was manufacturing engineer and one of the test drivers.",
     date: "2013",
-    image: "TODO:",
+    link: "TODO:",
+  },
+  {
+    id: 11,
+    title: "Kart Racing",
+    description:
+      "I had an amazing opportunity to to race shifter karts around the country with my father. I won six 1st place championships and 100+ races. I learned the value of practice and dicipline to achieve goals.",
+    date: "2005 - 2012",
+    link: "TODO:",
+  },
+  {
+    id: 12,
+    title: "Ferris-Turney General Contractors",
+    description:
+      "As a Senior Project Engineer with Ferris-Turney, I was responsible for managing healthcare construction projects and helped manage several projects at critical facilities which needed to stay operational during construction",
+    date: "August 2020 - June 2021",
+    link: "TODO:",
+  },
+  {
+    id: 13,
+    title: "Swinerton Builders",
+    description:
+      "I was responsible for coordinating subcontractors, material orders and approvals, & resolving constructability issues with the project team. I was fortunate to work on several unique projects, for tech clients, mission critical data centers, and research labs.",
+    date: "July 2016 - June 2020",
+    link: "TODO:",
+  },
+  {
+    id: 14,
+    title: "Stellar J",
+    description:
+      "My roles at Stellar J were to manage project documentation, prepare construction details, and coordinate material deliveries on several unique intrastructure and water treatement projects.",
+    date: "June 2014 - July 2016",
+    link: "TODO:",
+  },
+  {
+    id: 15,
+    title: "Granite Construction",
+    description:
+      "As an intern with Granite Construction I had the opportunity to work on the Highway 520 rennovation near Seattle.",
+    date: "June 2013 - June 2014",
+    link: "TODO:",
   },
 ];
 
-// Furniture Studio
 // Architecture Designs
-// Formula SAE
 // Kart Racing
 // Ferris-turney
 // Swinerton
