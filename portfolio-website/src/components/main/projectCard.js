@@ -11,7 +11,7 @@ class ProjectCard extends Component {
         <div className="project-details">
           <h1>{name}</h1>
           <h3>{stack}</h3>
-          <p>{description}</p>
+          <p className="project-description">{description}</p>
         </div>
         <div className="flex-horizontal project-footer">
           <div className="project-icon">TODO: git link</div>
