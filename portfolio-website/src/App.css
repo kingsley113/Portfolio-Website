@@ -204,7 +204,7 @@ body {
 }
 
 .timeline-card {
-  width: 500px;
+  /* width: 500px; */
   height: 100%;
   /* border: 1px solid red; */
   box-sizing: border-box;
@@ -431,4 +431,28 @@ body {
 
 .filler-panel {
   margin-right: auto;
+}
+
+/* TIMELINE STYLES */
+#timeline-container {
+  position: relative;
+  height: 100%;
+  width: 2000px;
+}
+#timeline-line {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: 40px;
+  background-color: pink;
+  transform: skewY(-10deg);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2em;
+  color: black;
+  /* TODO: tie this to color variable */
 }

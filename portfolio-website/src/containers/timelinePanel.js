@@ -1,12 +1,13 @@
 import React from "react";
 import SectionDivider from "../components/sectionDivider";
+import Timeline from "../components/timeline";
 
 const TimelinePanel = () => {
   return (
     <React.Fragment>
       <SectionDivider text="Timeline" />
       <div className="timeline-card solid-background" id="timeline-panel">
-        Timeline Content Here
+        <Timeline />
       </div>
     </React.Fragment>
   );
