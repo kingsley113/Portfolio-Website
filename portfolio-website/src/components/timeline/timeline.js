@@ -13,7 +13,7 @@ const Timeline = () => {
             event={events[1]}
             left="50px"
             position="top"
-            height="150%"
+            height="140%"
           />
           {/* Flatiron Program */}
           <TimelineEventCard
@@ -27,7 +27,7 @@ const Timeline = () => {
             event={events[2]}
             left="440px"
             position="top"
-            height="135%"
+            height="125%"
           />
           {/* Ferris Turney */}
           <TimelineEventCard
