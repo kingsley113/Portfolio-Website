@@ -1,5 +1,7 @@
 import React from "react";
+import Mailto from "../components/contact/mailto";
 import SectionDivider from "../components/sectionDivider";
+// import {Link} from "react-router-Dom"
 
 import { links } from "../data/data";
 
@@ -8,31 +10,56 @@ const ContactPanel = () => {
     <React.Fragment>
       <SectionDivider text="Contact" />
       <div className="contact-panel " id="contact-panel">
-        <h1>
-          Every challenge in life has a solution, we just need to find it.
+        <h1 className="inspirational-quote-container">
+          "Every problem has a solution. You just have to be creative enough to
+          find it"
         </h1>
+        <p className="quote-author">-Travis Kalanik</p>
+        <div className="filler-top"></div>
+
+        <p className="contact-text">
+          I would love to get in touch, please feel free to download a copy of
+          my resume, send an email, or check out any of the links below!
+        </p>
+        <div className="filler-top"></div>
         <div className="link-button" onClick={() => handleResumeClick()}>
           Download Resume
         </div>
-        Email link studio one three link facebook link twitter
-        <img
-          src="./icons/GitHub-Mark-Light-64px.png"
-          alt="Github Mark"
-          className="footer-icon"
-          onClick={() => window.open(links.github)}
-        />
-        <img
-          src="./icons/LI-In-Bug.png"
-          alt="Linkedin Icon"
-          className="footer-icon"
-          onClick={() => window.open(links.linkedin)}
-        />
-        <img
-          src="./icons/glyph-logo_May2016.png"
-          alt="Instagram Icon"
-          className="footer-icon"
-          onClick={() => window.open(links.instagram)}
-        />
+        <Mailto className="link-button" email={links.email}>
+          Send an email
+        </Mailto>
+        <div className="contact-icon-container">
+          <img
+            src="./icons/GitHub-Mark-Light-64px.png"
+            alt="Github Mark"
+            className="footer-icon"
+            onClick={() => window.open(links.github)}
+          />
+          <img
+            src="./icons/LI-In-Bug.png"
+            alt="Linkedin Icon"
+            className="footer-icon"
+            onClick={() => window.open(links.linkedin)}
+          />
+          <img
+            src="./icons/glyph-logo_May2016.png"
+            alt="Instagram Icon"
+            className="footer-icon"
+            onClick={() => window.open(links.instagram)}
+          />
+          <img
+            src="./icons/f_logo_RGB-White_100.png"
+            alt="Facebook Icon"
+            className="footer-icon"
+            onClick={() => window.open(links.facebook)}
+          />
+          <img
+            src="./icons/StudioOneThree.png"
+            alt="S13 Icon"
+            className="footer-icon"
+            onClick={() => window.open(links.studioOneThree)}
+          />
+        </div>
         <p>&copy; Cameron Kingsley 2021</p>
       </div>
     </React.Fragment>

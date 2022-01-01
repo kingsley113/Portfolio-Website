@@ -6,7 +6,7 @@
 /* CUSTOM PROPERTES*/
 :root {
   --footer-height: 60px;
-  --accent-color: #333366;
+  --accent-color: #ff83c7;
   --background-color: #333366;
   --tmeline-skew: 7deg;
 }
@@ -16,6 +16,9 @@ body {
   color: white;
 }
 
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+}
 .App {
   display: flex;
   flex-direction: column;
@@ -80,7 +83,7 @@ body {
 
   /* --accent-color: #333366; */
   height: var(--footer-height);
-  background-color: var(--accent-color);
+  background-color: var(--background-color);
   /* border-top: 2px solid rgb(193, 232, 250); */
   /* filter: drop-shadow(0px 0px 5px var(--header-color)); */
 
@@ -266,15 +269,6 @@ body {
   /* margin-right: 100px; */
 }
 
-.contact-panel {
-  width: 500px;
-  height: 100%;
-  /* border: 1px solid red; */
-  box-sizing: border-box;
-  background-color: var(--background-color);
-  margin-right: 100px;
-}
-
 .resume-panel {
   width: 500px;
   height: 100%;
@@ -302,6 +296,7 @@ body {
   padding-top: 10px;
 
   margin-left: 150px;
+  margin-right: -1px;
 
   /* filter: drop-shadow(0px 0px 15px rgba(241, 134, 187, 0.685)); */
   clip-path: polygon(40px 100%, 0% 0%, 100% 0%, 100% 100%);
@@ -605,9 +600,23 @@ body {
   font-size: 0.75em;
 }
 
-/* ************* ICONS & LINKS *********** */
+/* ************* CONTACT PANEL *********** */
+.contact-panel {
+  width: 500px;
+  height: calc(100% - var(--footer-height));
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  margin-right: 100px;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
 .link-button {
-  width: 200px;
+  width: 250px;
   height: 35px;
   /* background-color: var(--accent-color); */
   font-family: "Bebas Neue", sans-serif;
@@ -620,9 +629,39 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  margin: 6px;
 }
 
 .link-button:hover {
   color: var(--background-color);
   background-color: pink;
+  cursor: pointer;
+}
+
+.email-link {
+  color: aqua;
+}
+
+.contact-icon-container {
+  margin-top: 20px;
+}
+
+.inspirational-quote-container {
+  margin: 50px 5px 0px 5px;
+  text-align: center;
+
+  color: var(--accent-color);
+}
+
+.quote-author {
+  margin: 2px 0 0 0;
+}
+
+.contact-text {
+  margin: 0px 40px;
+  /* max-width: 400px; */
 }

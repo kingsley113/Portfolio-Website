@@ -20,7 +20,7 @@ const PageContent = () => {
       <SoftwareProjectsPanel />
       <BlogPanel />
       <TimelinePanel />
-      <ResumePanel />
+      {/* <ResumePanel /> */}
       {/* TODO: Instagram Photo Feed */}
       <ContactPanel />
     </div>

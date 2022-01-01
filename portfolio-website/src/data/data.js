@@ -211,10 +211,11 @@ export const timelineEvents = [
 export const links = {
   github: "https://github.com/kingsley113",
   linkedin: "https://www.linkedin.com/in/cameron-kingsley-380a9566/",
-  facebook: "TODO:",
+  facebook: "https://www.facebook.com/cameron.kingsley.1",
   instagram: "https://www.instagram.com/studio.one.three/",
   twitter: "TODO:",
   resume: "TODO:",
   email: "cameron.kingsley13@gmail.com",
   youtube: "TODO:",
+  studioOneThree: "https://www.studio-one-three.com/",
 };
