@@ -18,13 +18,18 @@ const ContactPanel = () => {
         <div className="filler-top"></div>
 
         <p className="contact-text">
-          I would love to get in touch, please feel free to download a copy of
-          my resume, send an email, or check out any of the links below!
+          I would love to get in touch and always looking for new opportunities.
+          Please feel free to download a copy of my resume, send an email, or
+          check out any of the links below!
         </p>
         <div className="filler-top"></div>
-        <div className="link-button" onClick={() => handleResumeClick()}>
+        <a
+          href="./Cameron_Kingsley_Resume_General_12-30-21.pdf"
+          target="_blank"
+          className="link-button"
+        >
           Download Resume
-        </div>
+        </a>
         <Mailto className="link-button" email={links.email}>
           Send an email
         </Mailto>
@@ -63,13 +68,6 @@ const ContactPanel = () => {
         <p>&copy; Cameron Kingsley 2021</p>
       </div>
     </React.Fragment>
-  );
-};
-
-const handleResumeClick = () => {
-  // TODO: resume link stuff here
-  alert(
-    "Hold Up... I'm still working on a few things and this link is one of them."
   );
 };
 

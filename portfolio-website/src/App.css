@@ -59,6 +59,9 @@ h1 {
     transform: rotate(360deg);
   }
 } */
+#page-content {
+  height: calc(100% - var(--footer-height));
+}
 
 .container {
   margin-bottom: auto;
@@ -401,7 +404,7 @@ h1 {
   display: block;
 }
 
-/* NAVBAR */
+/* *************NAVBAR ************** */
 
 .nav-icon-container {
   position: relative;
@@ -656,13 +659,15 @@ h1 {
 .contact-text {
   margin: 0px 40px;
   /* max-width: 400px; */
+  font-size: 1.2em;
+  text-align: center;
 }
 
 /* *********** ABOUT ME PANEL ************* */
-.about-card {
+.about-panel {
   width: 800px;
   height: 100%;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   box-sizing: border-box;
   /* margin-right: 100px; */
   padding: 5px 20px 5px 0px;
@@ -674,6 +679,7 @@ h1 {
 }
 
 .about-text {
+  margin: 5px 5px 5px 10px;
 }
 
 .about-info-container {
