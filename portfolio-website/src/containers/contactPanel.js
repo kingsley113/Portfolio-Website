@@ -68,6 +68,9 @@ const ContactPanel = () => {
 
 const handleResumeClick = () => {
   // TODO: resume link stuff here
+  alert(
+    "Hold Up... I'm still working on a few things and this link is one of them."
+  );
 };
 
 export default ContactPanel;
