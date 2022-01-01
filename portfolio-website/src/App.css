@@ -604,3 +604,25 @@ body {
   margin: 0 0 10px 0;
   font-size: 0.75em;
 }
+
+/* ************* ICONS & LINKS *********** */
+.link-button {
+  width: 200px;
+  height: 35px;
+  /* background-color: var(--accent-color); */
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2em;
+  color: white;
+  border: 2px solid pink;
+  border-radius: 3px;
+  transition: 0.4s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-button:hover {
+  color: var(--background-color);
+  background-color: pink;
+}
