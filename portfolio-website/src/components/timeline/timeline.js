@@ -91,7 +91,7 @@ const Timeline = () => {
           <span>2012</span>
           <span></span>
           <div className="timeline-intro">
-            Take a look at a handful of my top achievements over the years
+            Check out a handful of my other accomplishments over the years
           </div>
         </div>
         <div id="timeline-lower">

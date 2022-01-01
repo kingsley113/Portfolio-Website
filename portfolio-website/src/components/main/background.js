@@ -31,7 +31,7 @@ const Background = (props) => {
       <img
         src="./images/background-5-background.png"
         className="background-layer-gradient"
-        style={{ top: props.position * -0.1 }}
+        // style={{ top: props.position * -0.1 }}
         alt=""
       />
       {/* Parallax background layers */}
@@ -47,6 +47,7 @@ const Background = (props) => {
         style={{ left: props.position * -0.1 }}
         alt=""
       />
+      {/* SECOND LAYER */}
       <img
         src="./images/background-2.png"
         className="background-layer"
@@ -54,9 +55,22 @@ const Background = (props) => {
         alt=""
       />
       <img
+        src="./images/background-2.png"
+        className="background-layer"
+        style={{ left: props.position * -0.2 - 70 + 2842 }}
+        alt=""
+      />
+      {/* FRONT LAYER */}
+      <img
         src="./images/background-1-front.png"
         className="background-layer"
         style={{ left: props.position * -0.4 }}
+        alt=""
+      />
+      <img
+        src="./images/background-1-front.png"
+        className="background-layer"
+        style={{ left: props.position * -0.4 + 2842 }}
         alt=""
       />
 
