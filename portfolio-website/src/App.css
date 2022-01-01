@@ -252,15 +252,6 @@ h1 {
   z-index: -5;
 }
 
-.about-card {
-  width: 500px;
-  height: 100%;
-  /* border: 1px solid red; */
-  box-sizing: border-box;
-  /* margin-right: 100px; */
-  padding: 5px 20px 5px 0px;
-}
-
 .timeline-card {
   /* width: 500px; */
   height: 100%;
@@ -664,4 +655,25 @@ h1 {
 .contact-text {
   margin: 0px 40px;
   /* max-width: 400px; */
+}
+
+/* *********** ABOUT ME PANEL ************* */
+.about-card {
+  width: 800px;
+  height: 100%;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  /* margin-right: 100px; */
+  padding: 5px 20px 5px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.portait-image {
+}
+
+.about-text {
+}
+
+.about-info-container {
 }

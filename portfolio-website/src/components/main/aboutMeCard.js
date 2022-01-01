@@ -4,31 +4,36 @@ const AboutMeCard = () => {
   return (
     <div className="about-card solid-background" id="about-panel">
       {/* <h1>About Me</h1> */}
-      <img src="https://picsum.photos/400" alt="screenshot" />
-      <p>
-        Cameron is an aspiring full stack developer recently graduated from the
-        Flatiron School software engineering program.
-      </p>
+      <div className="flex-horizontal">
+        <img src="https://picsum.photos/400" alt="screenshot" />
+        <div>
+          <p>
+            Cameron is an aspiring full stack developer recently graduated from
+            the Flatiron School software engineering program.
+          </p>
 
-      <p>
-        My passion in life is to create, from software to the workshop, my happy
-        place is making something new, learning new techniques, constantly
-        pushing myself. As a developer I enjoy the opportunity to work on
-        exciting projects with the potential to reach vast amounts of people.
-      </p>
+          <p>
+            My passion in life is to create, from software to the workshop, my
+            happy place is making something new, learning new techniques,
+            constantly pushing myself. As a developer I enjoy the opportunity to
+            work on exciting projects with the potential to reach vast amounts
+            of people.
+          </p>
 
-      <p>
-        Every challenge we face has a solution; all we need to do is find it. I
-        approach challenges as learning opportunities, a chance to grow. These
-        are the times to get creative, try new things, think outside the box and
-        be different.
-      </p>
+          <p>
+            Every challenge we face has a solution; all we need to do is find
+            it. I approach challenges as learning opportunities, a chance to
+            grow. These are the times to get creative, try new things, think
+            outside the box and be different.
+          </p>
 
-      <p>
-        On the side, I have a passion for making of all sorts, Game Design,
-        Arduino, 3d printing, woodworking, metal work, prop making, tabletop
-        miniatures, etc. If I am creating something new, I am happy.
-      </p>
+          <p>
+            On the side, I have a passion for making of all sorts, Game Design,
+            Arduino, 3d printing, woodworking, metal work, prop making, tabletop
+            miniatures, etc. If I am creating something new, I am happy.
+          </p>
+        </div>
+      </div>
 
       {/* <p>
         In a previous life as a Senior Project Engineer for General Contractors,
@@ -36,6 +41,7 @@ const AboutMeCard = () => {
         bring wholistic project management experience to the table as well as
         focus in on the details.
       </p> */}
+      <div className="filler-top"></div>
       <div>
         {/* <h3>Skilz</h3> */}
         <div className="flex-horizontal" id="skills">
