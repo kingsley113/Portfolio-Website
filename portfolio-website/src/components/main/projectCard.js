@@ -34,6 +34,9 @@ class ProjectCard extends Component {
   handleClick() {
     // TODO: get real links to projects once hosted
     console.log("Link clicked, but theres nothing to link to... yet...");
+    alert(
+      "Hold Up... I'm still working on a few things and this link is one of them."
+    );
   }
 }
 
