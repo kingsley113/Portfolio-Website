@@ -5,7 +5,12 @@ const AboutMeCard = () => {
     <div className="about-panel solid-background" id="about-panel">
       {/* <h1>About Me</h1> */}
       <div className="flex-horizontal">
-        <img src="https://picsum.photos/400" alt="screenshot" />
+        {/* <img src="https://picsum.photos/400" alt="screenshot" /> */}
+        <img
+          className="portrait-image"
+          src="./images/ck_portrait_white.png"
+          alt="screenshot"
+        />
         <div className="about-text">
           <p>
             Cameron is an aspiring full stack developer recently graduated from
@@ -72,9 +77,9 @@ const AboutMeCard = () => {
                 <li>Python (soon!)</li>
                 <li>C# (Unity)</li>
                 <li>C (Ardunio)</li>
-                <li>Unity</li>
                 <li>Photoshop</li>
                 <li>Illustrator</li>
+                <li>3D Modeling</li>
               </ul>
             </div>
           </div>

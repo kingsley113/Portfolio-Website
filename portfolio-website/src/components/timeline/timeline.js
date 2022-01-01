@@ -90,6 +90,9 @@ const Timeline = () => {
           <span>2013</span>
           <span>2012</span>
           <span></span>
+          <div className="timeline-intro">
+            Take a look at a handful of my top achievements over the years
+          </div>
         </div>
         <div id="timeline-lower">
           {/* Studio One Three */}
