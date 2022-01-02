@@ -6,8 +6,6 @@ class FeatureSign extends Component {
   render() {
     return (
       <div>
-        {/* TODO: Replace these placeholder images with real ones */}
-        {/* TODO: Consider using the same background image with building and frame and only the actual neon lights as the ones swapped out? */}
         <div id="feature-image-container">
           <img
             id="sign-off"
@@ -143,7 +141,6 @@ class FeatureSign extends Component {
 
   // clear the interval when unmounting component
   componentWillUnmount() {
-    // TODO: clear the interval
     clearInterval(this.state.neonFlicker);
   }
 }

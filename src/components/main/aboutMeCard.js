@@ -3,9 +3,7 @@ import React from "react";
 const AboutMeCard = () => {
   return (
     <div className="about-panel solid-background" id="about-panel">
-      {/* <h1>About Me</h1> */}
       <div className="flex-horizontal">
-        {/* <img src="https://picsum.photos/400" alt="screenshot" /> */}
         <img
           className="portrait-image"
           src={process.env.PUBLIC_URL + "/images/ck_portrait_white.png"}
@@ -25,24 +23,11 @@ const AboutMeCard = () => {
             of people. As a maker, I never shy away from a challenge and view
             them as a chance to grow and get creative, to try something new.
           </p>
-
-          {/* <p>
-            On the side, I have a passion for making of all sorts, Game Design,
-            Arduino, 3d printing, woodworking, metal work, prop making, tabletop
-            miniatures, etc. If I am creating something new, I am happy.
-          </p> */}
         </div>
       </div>
 
-      {/* <p>
-        In a previous life as a Senior Project Engineer for General Contractors,
-        I helped manage many exciting commercial construction projects and can
-        bring wholistic project management experience to the table as well as
-        focus in on the details.
-      </p> */}
       <div className="filler-top"></div>
       <div>
-        {/* <h3>Skilz</h3> */}
         <div className="flex-horizontal" id="skills">
           <div>
             <div className="flex-horizontal">

@@ -2,20 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-// import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-
-// import { ParallaxProvider } from "react-scroll-parallax";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router basename={process.env.PUBLIC_URL}>
-      {/* <Router> */}
-      {/* <ParallaxProvider> */}
       <Route path="/">
         <App />
       </Route>
-      {/* </ParallaxProvider> */}
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

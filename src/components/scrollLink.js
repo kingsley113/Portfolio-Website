@@ -7,8 +7,13 @@ class ScrollLink extends Component {
     pageContent: null,
     scrollOffset: null,
   };
+
   componentDidMount() {
     const element = document.getElementById(`${this.props.id}`);
+    window.addEventListener("load", this.handleLoad(element));
+  }
+
+  handleLoad(element) {
     this.setState({
       position: element.getBoundingClientRect().left,
       container: document.getElementById("container"),
@@ -21,11 +26,7 @@ class ScrollLink extends Component {
   render() {
     return (
       <div id={`${this.props.id}-div`} className="nav-icon-container">
-        <button
-          // className={this.setActiveStyle()}
-          className="nav-icon"
-          onClick={() => this.handleClick()}
-        >
+        <button className="nav-icon" onClick={() => this.handleClick()}>
           {this.props.text}
         </button>
         <div className={this.setActiveStyle()}></div>
@@ -42,26 +43,13 @@ class ScrollLink extends Component {
     if (this.state.container) {
       // Set CSS footer-bar property to render the nav underline bar
       const { container, position, pageContent } = this.state;
-
-      // const icon = document.getElementById(`${this.props.id}-div`);
-      // const root = document.querySelector(":root");
-      // let width = getComputedStyle(root);
-      // console.log(width.getPropertyValue("--footer-bar-width"));
-
       if (
         container.scrollLeft + window.innerWidth / 2 >= position - 200 ||
         container.scrollLeft + window.innerWidth >= pageContent.offsetWidth - 2
         // Small buffer to trigger just before page end
       ) {
-        // root.style.setProperty(
-        //   "--footer-bar-width",
-        //   icon.getBoundingClientRect().right
-        // );
-        // console.log(icon.getBoundingClientRect().right);
-        // return "nav-icon active";
         return "inactive active";
       } else {
-        // return "nav-icon";
         return "inactive";
       }
     }

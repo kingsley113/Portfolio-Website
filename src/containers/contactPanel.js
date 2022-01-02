@@ -1,7 +1,6 @@
 import React from "react";
 import Mailto from "../components/contact/mailto";
 import SectionDivider from "../components/sectionDivider";
-// import {Link} from "react-router-Dom"
 
 import { links } from "../data/data";
 

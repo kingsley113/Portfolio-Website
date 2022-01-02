@@ -1,10 +1,7 @@
 import React from "react";
-// import { Parallax } from "react-scroll-parallax";
-// import Particles from "react-tsparticles";
 
 const Background = (props) => {
   // Setup Scroll Event
-  // TODO: scroll throttling?
   const container = document.getElementById("container");
   // eslint-disable-next-line
   let position = 0;
@@ -17,22 +14,9 @@ const Background = (props) => {
 
   return (
     <div id="background">
-      {/* {console.log(props.position)} */}
-      {/* <video
-        id="background-video"
-        loop
-        autoPlay
-        muted
-        style={{ left: props.position * -1 }}
-      >
-        <source src="./video/NeonSignTest.mp4" type="video/mp4" />
-      </video> */}
-
-      {/* Vertically Scrolling background layer, for sunrise effect */}
       <img
         src={process.env.PUBLIC_URL + "/images/background-5-background.png"}
         className="background-layer-gradient"
-        // style={{ top: props.position * -0.1 }}
         alt=""
       />
       {/* Parallax background layers */}
@@ -74,18 +58,7 @@ const Background = (props) => {
         style={{ left: props.position * -0.4 + 2842 }}
         alt=""
       />
-
       <div className="color-overlay"></div>
-
-      {/* <div
-        id="background-layer-1"
-        className="background-layer"
-        style={{
-          left: props.position * -0.75,
-          backgroundImage: "url('/images/tempBackground-3.png')",
-          backgroundRepeat: "repeat - x",
-        }}
-      ></div> */}
     </div>
   );
 };

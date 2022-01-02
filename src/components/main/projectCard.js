@@ -5,7 +5,6 @@ class ProjectCard extends Component {
     const { name, description, stack, image, githubLink } = this.props.project;
     return (
       <div className="project-card">
-        {/* {console.log(this.props.project)} */}
         <img src={image} alt="screenshot" className="project-thumbnail" />
         {/* TODO: use image carousel? */}
         <div className="project-details">
@@ -14,7 +13,6 @@ class ProjectCard extends Component {
           <p className="project-description">{description}</p>
         </div>
         <div className="flex-horizontal project-footer">
-          {/* <div className="project-icon">TODO: git link</div> */}
           <img
             src={process.env.PUBLIC_URL + "/icons/GitHub-Mark-Light-64px.png"}
             alt="Github Mark"
@@ -38,14 +36,5 @@ class ProjectCard extends Component {
     );
   }
 }
-
-// TODO: Properties to include:
-// Title
-// Tagline/Category
-// Description
-// Stack Used
-// Image
-// Link to project/site
-// Git Link
 
 export default ProjectCard;

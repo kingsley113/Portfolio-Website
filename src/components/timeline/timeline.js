@@ -64,7 +64,6 @@ const Timeline = () => {
             position="top"
             height="75%"
           />
-
           {/* Granite Cosntruction */}
           <TimelineEventCard
             event={events[14]}
@@ -102,7 +101,6 @@ const Timeline = () => {
             position="btm"
             height="45%"
           />
-
           {/* Swinerton */}
           <TimelineEventCard
             event={events[12]}
@@ -145,5 +143,3 @@ const Timeline = () => {
 };
 
 export default Timeline;
-
-// TODO: Add border left or right prop

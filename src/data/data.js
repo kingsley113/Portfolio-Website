@@ -200,14 +200,6 @@ export const timelineEvents = [
   },
 ];
 
-// Architecture Designs
-// Kart Racing
-// Ferris-turney
-// Swinerton
-// Stellar J
-// Granite
-// Warhammer
-
 export const links = {
   github: "https://github.com/kingsley113",
   linkedin: "https://www.linkedin.com/in/cameron-kingsley-380a9566/",
