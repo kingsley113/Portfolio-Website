@@ -1,11 +1,12 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
-import Particles from "react-tsparticles";
+// import { Parallax } from "react-scroll-parallax";
+// import Particles from "react-tsparticles";
 
 const Background = (props) => {
   // Setup Scroll Event
   // TODO: scroll throttling?
   const container = document.getElementById("container");
+  // eslint-disable-next-line
   let position = 0;
   if (container) {
     container.addEventListener("scroll", function () {

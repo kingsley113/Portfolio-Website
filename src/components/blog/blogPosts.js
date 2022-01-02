@@ -30,7 +30,7 @@ class BlogPosts extends Component {
             <img
               className="blog-thumbnail"
               src={post.thumbnail}
-              alt="blog-image"
+              alt="blog-thumbnail"
             ></img>
           </div>
           <div>

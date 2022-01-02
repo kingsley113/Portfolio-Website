@@ -41,7 +41,7 @@ class ScrollLink extends Component {
   setActiveStyle() {
     if (this.state.container) {
       // Set CSS footer-bar property to render the nav underline bar
-      const { container, position, scrollOffset, pageContent } = this.state;
+      const { container, position, pageContent } = this.state;
 
       // const icon = document.getElementById(`${this.props.id}-div`);
       // const root = document.querySelector(":root");

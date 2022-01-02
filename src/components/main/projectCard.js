@@ -2,8 +2,7 @@ import React, { Component } from "react";
 
 class ProjectCard extends Component {
   render() {
-    const { name, description, stack, image, id, githubLink } =
-      this.props.project;
+    const { name, description, stack, image, githubLink } = this.props.project;
     return (
       <div className="project-card">
         {/* {console.log(this.props.project)} */}

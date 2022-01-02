@@ -29,6 +29,7 @@ const ContactPanel = () => {
             "/Cameron_Kingsley_Resume_General_12-30-21.pdf"
           }
           target="_blank"
+          rel="noreferrer"
           className="link-button"
         >
           Download Resume
