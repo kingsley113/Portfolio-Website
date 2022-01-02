@@ -217,9 +217,9 @@ h1 {
   margin: 10px;
 }
 
-.project-description {
-  /* overflow-y: scroll; */
-}
+/* .project-description {
+  overflow-y: scroll;
+} */
 
 .project-link {
   width: 130px;
@@ -707,5 +707,5 @@ h1 {
   margin: 5px 5px 5px 10px;
 }
 
-.about-info-container {
-}
+/* .about-info-container {
+} */
