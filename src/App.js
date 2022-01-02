@@ -1,4 +1,4 @@
-import "./App.css";
+import "./portfolio-website/App.css";
 import useHorizontal from "@oberon-amsterdam/horizontal/hook";
 import React, { useState } from "react";
 
