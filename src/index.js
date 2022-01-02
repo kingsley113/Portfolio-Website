@@ -12,7 +12,7 @@ ReactDOM.render(
     <Router basename={process.env.PUBLIC_URL}>
       {/* <Router> */}
       {/* <ParallaxProvider> */}
-      <Route exact path="/">
+      <Route path="/">
         <App />
       </Route>
       {/* </ParallaxProvider> */}
