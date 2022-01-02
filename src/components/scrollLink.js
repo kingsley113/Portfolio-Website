@@ -7,26 +7,31 @@ class ScrollLink extends Component {
     pageContent: null,
     scrollOffset: null,
   };
-
   componentDidMount() {
-    const element = document.getElementById(`${this.props.id}`);
-    window.addEventListener("load", this.handleLoad(element));
+    window.addEventListener("load", this.handleLoad(this.props.id));
   }
 
-  handleLoad(element) {
-    this.setState({
-      position: element.getBoundingClientRect().left,
-      container: document.getElementById("container"),
-      pageContent: document.getElementById("page-content"),
-      // Scroll offset to fine tune position of scroll
-      scrollOffset: window.innerWidth / 2 - 200,
-    });
+  handleLoad(id) {
+    setTimeout(() => {
+      const element = document.getElementById(`${id}`);
+      this.setState({
+        position: element.getBoundingClientRect().left,
+        container: document.getElementById("container"),
+        pageContent: document.getElementById("page-content"),
+        // Scroll offset to fine tune position of scroll
+        scrollOffset: window.innerWidth / 2 - 200,
+      });
+    }, 500);
   }
 
   render() {
     return (
       <div id={`${this.props.id}-div`} className="nav-icon-container">
-        <button className="nav-icon" onClick={() => this.handleClick()}>
+        <button
+          // className={this.setActiveStyle()}
+          className="nav-icon"
+          onClick={() => this.handleClick()}
+        >
           {this.props.text}
         </button>
         <div className={this.setActiveStyle()}></div>
