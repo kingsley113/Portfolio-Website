@@ -17,7 +17,7 @@ class ProjectCard extends Component {
         <div className="flex-horizontal project-footer">
           {/* <div className="project-icon">TODO: git link</div> */}
           <img
-            src="./icons/GitHub-Mark-Light-64px.png"
+            src={process.env.PUBLIC_URL + "/icons/GitHub-Mark-Light-64px.png"}
             alt="Github Mark"
             className="project-icon"
             onClick={() => window.open(githubLink)}

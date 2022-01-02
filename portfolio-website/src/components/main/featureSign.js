@@ -11,18 +11,21 @@ class FeatureSign extends Component {
         <div id="feature-image-container">
           <img
             id="sign-off"
-            src="./images/finalSignOff.png"
+            src={process.env.PUBLIC_URL + "/images/finalSignOff.png"}
             className="sign-feature-image"
+            alt="sign-off"
           />
           <img
             id="sign-on"
-            src="./images/finalSignOn.png"
+            src={process.env.PUBLIC_URL + "/images/finalSignOn.png"}
             className="sign-feature-image hidden"
+            alt="sign-on"
           />
           <img
             id="sign-on-james-off"
-            src="./images/finalSignOnJamesOff.png"
+            src={process.env.PUBLIC_URL + "/images/finalSignOnJamesOff.png"}
             className="sign-feature-image hidden"
+            alt="sign-on-james-off"
           />
         </div>
       </div>

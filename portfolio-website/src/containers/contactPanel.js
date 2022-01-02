@@ -24,7 +24,10 @@ const ContactPanel = () => {
         </p>
         <div className="filler-top"></div>
         <a
-          href="./Cameron_Kingsley_Resume_General_12-30-21.pdf"
+          href={
+            process.env.PUBLIC_URL +
+            "/Cameron_Kingsley_Resume_General_12-30-21.pdf"
+          }
           target="_blank"
           className="link-button"
         >
@@ -35,31 +38,31 @@ const ContactPanel = () => {
         </Mailto>
         <div className="contact-icon-container">
           <img
-            src="./icons/GitHub-Mark-Light-64px.png"
+            src={process.env.PUBLIC_URL + "/icons/GitHub-Mark-Light-64px.png"}
             alt="Github Mark"
             className="footer-icon"
             onClick={() => window.open(links.github)}
           />
           <img
-            src="./icons/LI-In-Bug.png"
+            src={process.env.PUBLIC_URL + "/icons/LI-In-Bug.png"}
             alt="Linkedin Icon"
             className="footer-icon"
             onClick={() => window.open(links.linkedin)}
           />
           <img
-            src="./icons/glyph-logo_May2016.png"
+            src={process.env.PUBLIC_URL + "/icons/glyph-logo_May2016.png"}
             alt="Instagram Icon"
             className="footer-icon"
             onClick={() => window.open(links.instagram)}
           />
           <img
-            src="./icons/f_logo_RGB-White_100.png"
+            src={process.env.PUBLIC_URL + "/icons/f_logo_RGB-White_100.png"}
             alt="Facebook Icon"
             className="footer-icon"
             onClick={() => window.open(links.facebook)}
           />
           <img
-            src="./icons/StudioOneThree.png"
+            src={process.env.PUBLIC_URL + "/icons/StudioOneThree.png"}
             alt="S13 Icon"
             className="footer-icon"
             onClick={() => window.open(links.studioOneThree)}

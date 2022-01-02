@@ -8,7 +8,7 @@ const AboutMeCard = () => {
         {/* <img src="https://picsum.photos/400" alt="screenshot" /> */}
         <img
           className="portrait-image"
-          src="./images/ck_portrait_white.png"
+          src={process.env.PUBLIC_URL + "/images/ck_portrait_white.png"}
           alt="screenshot"
         />
         <div className="about-text">

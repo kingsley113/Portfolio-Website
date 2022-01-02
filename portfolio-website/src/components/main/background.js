@@ -29,46 +29,46 @@ const Background = (props) => {
 
       {/* Vertically Scrolling background layer, for sunrise effect */}
       <img
-        src="./images/background-5-background.png"
+        src={process.env.PUBLIC_URL + "/images/background-5-background.png"}
         className="background-layer-gradient"
         // style={{ top: props.position * -0.1 }}
         alt=""
       />
       {/* Parallax background layers */}
       <img
-        src="./images/background-4.png"
+        src={process.env.PUBLIC_URL + "/images/background-4.png"}
         className="background-layer"
         style={{ left: props.position * -0.05 }}
         alt=""
       />
       <img
-        src="./images/background-3.png"
+        src={process.env.PUBLIC_URL + "/images/background-3.png"}
         className="background-layer"
         style={{ left: props.position * -0.1 }}
         alt=""
       />
       {/* SECOND LAYER */}
       <img
-        src="./images/background-2.png"
+        src={process.env.PUBLIC_URL + "/images/background-2.png"}
         className="background-layer"
         style={{ left: props.position * -0.2 - 70 }}
         alt=""
       />
       <img
-        src="./images/background-2.png"
+        src={process.env.PUBLIC_URL + "/images/background-2.png"}
         className="background-layer"
         style={{ left: props.position * -0.2 - 70 + 2842 }}
         alt=""
       />
       {/* FRONT LAYER */}
       <img
-        src="./images/background-1-front.png"
+        src={process.env.PUBLIC_URL + "/images/background-1-front.png"}
         className="background-layer"
         style={{ left: props.position * -0.4 }}
         alt=""
       />
       <img
-        src="./images/background-1-front.png"
+        src={process.env.PUBLIC_URL + "/images/background-1-front.png"}
         className="background-layer"
         style={{ left: props.position * -0.4 + 2842 }}
         alt=""

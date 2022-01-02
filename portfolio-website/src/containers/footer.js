@@ -16,19 +16,19 @@ const Footer = () => {
       <div className="filler-panel"></div>
       {/* TODO: Add footer icons */}
       <img
-        src="./icons/GitHub-Mark-Light-64px.png"
+        src={process.env.PUBLIC_URL + "/icons/GitHub-Mark-Light-64px.png"}
         alt="Github Mark"
         className="footer-icon"
         onClick={() => window.open(links.github)}
       />
       <img
-        src="./icons/LI-In-Bug.png"
+        src={process.env.PUBLIC_URL + "/icons/LI-In-Bug.png"}
         alt="Linkedin Icon"
         className="footer-icon"
         onClick={() => window.open(links.linkedin)}
       />
       <img
-        src="./icons/glyph-logo_May2016.png"
+        src={process.env.PUBLIC_URL + "/icons/glyph-logo_May2016.png"}
         alt="Instagram Icon"
         className="footer-icon"
         onClick={() => window.open(links.instagram)}
