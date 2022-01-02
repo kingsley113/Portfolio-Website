@@ -2,9 +2,9 @@ import "./App.css";
 import useHorizontal from "@oberon-amsterdam/horizontal/hook";
 import React, { useState } from "react";
 
-import { Parallax } from "react-scroll-parallax";
+// import { Parallax } from "react-scroll-parallax";
 
-import Header from "./containers/header";
+// import Header from "./containers/header";
 import Footer from "./containers/footer";
 import PageContent from "./containers/pageContent";
 import Background from "./components/main/background";
