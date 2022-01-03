@@ -5,7 +5,7 @@ export const softwareProjects = [
     description:
       "CyberBug is a React application designed to help track and manage software bugs. As my final project with Flatiron School, this was an opportunity to combine everything taught over the program and create a true full stack application. Cyberbug utilizes a ReactJS frontend and Rails backend API, with MongoDb for persisting data. Inspired by the cyberpunk concept, I had a lot of fun with this project and wanted to end the program on a high note. I learned a ton about implementing a full React application and greatly expanded my CSS and UI design skills. ",
     stack: "ReactJS, Rails API, Ruby, MongoDB",
-    image: "https://picsum.photos/400",
+    image: "./images/projects/cyberbug-screenshot.png",
     githubLink: "https://github.com/kingsley113/Phase5-React-Cyberbug",
     link: "TODO:",
   },
@@ -25,7 +25,7 @@ export const softwareProjects = [
     description:
       "After completing the Flatiron Software Engineering Program, I needed a way to present and show off my projects. Rather than use a standard uninspired portfolio website template, I set out to create mine from scratch, to continue practicing my JavaScript and ReactJS skills, and once again pushing my understanding of CSS styling. I specifically chose design elements and effects that I didn’t already know how to create, as knowing how to learn new skills is essential. (and rewarding!)",
     stack: "ReactJS, Javascript",
-    image: "https://picsum.photos/400",
+    image: "./images/projects/website-screenshot.png",
     githubLink: "https://github.com/kingsley113/Portfolio-Website",
     link: "TODO:",
   },
@@ -35,7 +35,7 @@ export const softwareProjects = [
     description:
       "‘Who Are You?’ was my first JavaScript application. The idea behind this app is to help generate a backstory for a role-playing game character. The user answers a series of questions or can select to roll a die and choose a random answer. After all questions are answered, a story is prepared and presented, inspired by the previously selected answers. The user can then save their story and also view other stories for further inspiration.",
     stack: "Javascript, Rails API, Ruby, PostgreSQL",
-    image: "https://picsum.photos/400",
+    image: "./images/projects/who-are-you-screenshot.png",
     githubLink: "https://github.com/kingsley113/Phase4-JavascriptProject",
     link: "TODO:",
   },
@@ -45,7 +45,7 @@ export const softwareProjects = [
     description:
       "CellMate was created for the Fallout Cascadia development team to help track and manage the level design of the game world. The game engine divides the map is into a series of grid ‘cells’ and the team fell in love with the concept and design of the app. I set a goal to deploy this app for the team after completing the Flatiron program.",
     stack: "HTML, CSS, Rails, Ruby, MongoDB",
-    image: "https://picsum.photos/400",
+    image: "./images/projects/cell-mate-screenshot.png",
     githubLink:
       "https://github.com/kingsley113/Phase3-Rails-Project-CascadiaCellMate",
     link: "TODO:",
