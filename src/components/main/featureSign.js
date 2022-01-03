@@ -5,28 +5,28 @@ class FeatureSign extends Component {
 
   render() {
     return (
-      <div>
-        <div id="feature-image-container">
-          <img
-            id="sign-off"
-            src={process.env.PUBLIC_URL + "/images/finalSignOff.png"}
-            className="sign-feature-image"
-            alt="sign-off"
-          />
-          <img
-            id="sign-on"
-            src={process.env.PUBLIC_URL + "/images/finalSignOn.png"}
-            className="sign-feature-image hidden"
-            alt="sign-on"
-          />
-          <img
-            id="sign-on-james-off"
-            src={process.env.PUBLIC_URL + "/images/finalSignOnJamesOff.png"}
-            className="sign-feature-image hidden"
-            alt="sign-on-james-off"
-          />
-        </div>
+      // <div>
+      <div id="feature-image-container">
+        <img
+          id="sign-off"
+          src={process.env.PUBLIC_URL + "/images/finalSignOff.png"}
+          className="sign-feature-image"
+          alt="sign-off"
+        />
+        <img
+          id="sign-on"
+          src={process.env.PUBLIC_URL + "/images/finalSignOn.png"}
+          className="sign-feature-image hidden"
+          alt="sign-on"
+        />
+        <img
+          id="sign-on-james-off"
+          src={process.env.PUBLIC_URL + "/images/finalSignOnJamesOff.png"}
+          className="sign-feature-image hidden"
+          alt="sign-on-james-off"
+        />
       </div>
+      // </div>
     );
   }
 
