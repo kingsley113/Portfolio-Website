@@ -666,7 +666,7 @@ h1 {
 
 /* ************* CONTACT PANEL *********** */
 .contact-panel {
-  width: 500px;
+  width: 520px;
   /* height: calc(100% - var(--footer-height)); */
   height: 100%;
   /* border: 1px solid red; */
