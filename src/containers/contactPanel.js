@@ -25,7 +25,7 @@ const ContactPanel = () => {
         <a
           href={
             process.env.PUBLIC_URL +
-            "/Cameron_Kingsley_Resume_General_12-30-21.pdf"
+            "/Cameron_Kingsley_Resume_General_Jan_22.pdf"
           }
           target="_blank"
           rel="noreferrer"
