@@ -583,7 +583,7 @@ h1 {
 
 .timeline-intro {
   /* transform: skewY(calc(var(--tmeline-skew) * -1)); */
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: var(--accent-color);
   width: 1000px;
   position: absolute;
