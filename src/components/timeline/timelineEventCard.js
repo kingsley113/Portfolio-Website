@@ -13,6 +13,8 @@ const TimelineEventCard = (props) => {
         <h2>{props.event.title}</h2>
         <p>{props.event.date}</p>
         <p>{props.event.description}</p>
+        {renderEventLink(props.event.link)}
+        {/* <a href={props.event.link}>More</a> */}
       </div>
     );
   }
@@ -29,7 +31,18 @@ const TimelineEventCard = (props) => {
         <h2>{props.event.title}</h2>
         <p>{props.event.date}</p>
         <p>{props.event.description}</p>
+        {renderEventLink(props.event.link)}
       </div>
+    );
+  }
+};
+
+const renderEventLink = (link) => {
+  if (link && link !== "TODO:") {
+    return (
+      <a href={link} target="_blank" rel="noreferrer" className="event-link">
+        More
+      </a>
     );
   }
 };

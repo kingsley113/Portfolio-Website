@@ -3,6 +3,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 /* CUSTOM PROPERTES*/
 :root {
   --footer-height: 60px;
@@ -15,6 +17,8 @@
 body {
   /* background-color: black; */
   color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14pt;
 }
 
 h1 {
@@ -193,7 +197,7 @@ h1 {
   padding: 5px 5px 5px 5px;
   margin: 5px;
 
-  width: 40px;
+  /* width: 40px; */
   height: 40px;
   /* object-fit: contain; */
   /* margin: 0 10px; */
@@ -306,7 +310,7 @@ h1 {
   margin-right: -1px;
 
   /* filter: drop-shadow(0px 0px 15px rgba(241, 134, 187, 0.685)); */
-  clip-path: polygon(40px 100%, 0% 0%, 100% 0%, 100% 100%);
+  clip-path: polygon(40px 100%, -1% 0%, 100% 0%, 100% 100%);
 }
 
 .divider-text {
@@ -394,10 +398,11 @@ h1 {
 .sign-feature-image {
   position: absolute;
   height: 100%;
-  max-width: 120vw;
-  object-fit: cover;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left bottom;
   /* max-width: 80%; */
-  overflow: hidden;
+  /* overflow: hidden; */
   /* box-sizing: border-box; */
   bottom: 0;
   left: 0;
@@ -406,14 +411,19 @@ h1 {
 #feature-image-container {
   /* width: calc(100vw - 60px); */
   /* max-width: 1500px; */
-  width: 105vw;
-  height: 100%;
+  /* min-width: 100%; */
+  /* width: 100vw; */
+  width: 100vw;
+  /* height: 100vh; */
+  height: calc(100vh - var(--footer-height));
+
   position: relative;
   /* border: 1px solid red; */
   /* box-sizing: border-box; */
   /* display: flex; */
   /* align-items: flex-end; */
   /* justify-content: flex-start; */
+  /* overflow: hidden; */
 }
 
 .hidden {
@@ -581,6 +591,36 @@ h1 {
   left: 50px;
 }
 
+.event-link {
+  /* width: 250px; */
+  /* height: 35px; */
+  /* background-color: var(--accent-color); */
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2em;
+  color: white;
+  /* border: 2px solid var(--accent-color); */
+  /* border-radius: 3px; */
+  transition: 0.4s;
+  text-decoration: underline;
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  cursor: pointer;
+  /* text-decoration: none; */
+
+  margin: 6px;
+}
+
+.event-link:hover {
+  color: var(--hover-accent);
+  /* background-color: var(--accent-color); */
+  /* background-color: var(--hover-accent); */
+  /* border: 2px solid var(--hover-accent); */
+  cursor: pointer;
+}
+
 /* ****************BLOG POSTS*************** */
 .blog-card {
   width: 600px;
@@ -702,19 +742,20 @@ h1 {
   /* border: 1px solid red; */
   box-sizing: border-box;
   /* margin-right: 100px; */
-  padding: 5px 20px 5px 0px;
+  padding: 25px 20px 5px 0px;
   display: flex;
   flex-direction: column;
 }
 
 .portrait-image {
   width: 400px;
-  height: 380px;
+  height: 400px;
   object-fit: cover;
 }
 
 .about-text {
   margin: 5px 5px 5px 10px;
+  /* font-size: 1.1em; */
 }
 
 /* .about-info-container {

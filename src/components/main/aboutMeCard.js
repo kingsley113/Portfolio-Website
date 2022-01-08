@@ -10,11 +10,10 @@ const AboutMeCard = () => {
           alt="screenshot"
         />
         <div className="about-text">
-          <p>
-            Cameron is an aspiring full stack developer recently graduated from
-            the Flatiron School software engineering program.
-          </p>
-
+          {/* <p> */}
+          Cameron is an aspiring full stack developer recently graduated from
+          the Flatiron School software engineering program.
+          {/* </p> */}
           <p>
             My passion in life is to create, from software to the workshop, my
             happy place is making something new, learning new techniques,

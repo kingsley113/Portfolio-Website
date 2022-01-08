@@ -2,38 +2,62 @@ import React, { Component } from "react";
 
 class ProjectCard extends Component {
   render() {
-    const { name, description, stack, image, githubLink } = this.props.project;
+    const { name, description, stack, image, githubLink, link, youtubeLink } =
+      this.props.project;
     return (
       <div className="project-card">
         <img src={image} alt="screenshot" className="project-thumbnail" />
-        {/* TODO: use image carousel? */}
         <div className="project-details">
           <h1>{name}</h1>
           <h3>{stack}</h3>
           <p className="project-description">{description}</p>
         </div>
         <div className="flex-horizontal project-footer">
-          <img
-            src={process.env.PUBLIC_URL + "/icons/GitHub-Mark-Light-64px.png"}
-            alt="Github Mark"
-            className="project-icon"
-            onClick={() => window.open(githubLink)}
-          />
-          <div className="project-link" onClick={() => this.handleClick()}>
+          {this.renderGithubLink(githubLink)}
+          {this.renderProjectLink(link)}
+          {/* <div className="project-link" onClick={() => window.open(link)}>
             Visit Project
-          </div>
-          {/* TODO: Add Link to real project page */}
+          </div> */}
+          {this.renderYoutubeLink(youtubeLink)}
         </div>
       </div>
     );
   }
 
-  handleClick() {
-    // TODO: get real links to projects once hosted
-    console.log("Link clicked, but theres nothing to link to... yet...");
-    alert(
-      "Hold Up... I'm still working on a few things and this link is one of them."
-    );
+  renderProjectLink(link) {
+    if (link && link !== "TODO:") {
+      return (
+        <div className="project-link" onClick={() => window.open(link)}>
+          Visit Project
+        </div>
+      );
+    }
+  }
+
+  renderGithubLink(githubLink) {
+    if (githubLink && githubLink !== "TODO:") {
+      return (
+        <img
+          src={process.env.PUBLIC_URL + "/icons/GitHub-Mark-Light-64px.png"}
+          alt="Github Mark"
+          className="project-icon"
+          onClick={() => window.open(githubLink)}
+        />
+      );
+    }
+  }
+
+  renderYoutubeLink(youtubeLink) {
+    if (youtubeLink && youtubeLink !== "TODO:") {
+      return (
+        <img
+          src={process.env.PUBLIC_URL + "/icons/yt_icon_mono_dark.png"}
+          alt="Github Mark"
+          className="project-icon"
+          onClick={() => window.open(youtubeLink)}
+        />
+      );
+    }
   }
 }
 
