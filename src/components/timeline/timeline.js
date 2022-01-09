@@ -62,7 +62,7 @@ const Timeline = () => {
             event={events[7]}
             left="2100px"
             position="top"
-            height="75%"
+            height="calc(75% + 10px)"
           />
           {/* Granite Cosntruction */}
           <TimelineEventCard
@@ -127,7 +127,7 @@ const Timeline = () => {
             event={events[9]}
             left="2610px"
             position="btm"
-            height="100%"
+            height="calc(100% + 30px)"
           />
           {/* Kart Racing */}
           <TimelineEventCard

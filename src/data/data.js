@@ -145,7 +145,6 @@ export const timelineEvents = [
     description:
       "I competed on UW's Heavy Civil team at the Reno ASC Competition, Our team placed 1st out of schools across the US. We were presented with a set of drawings and prepared a project plan including an estimate, schedule, and construction approach.",
     date: "2014",
-    link: "https://www.asc67.org/",
   },
   {
     id: 9,
