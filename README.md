@@ -1,5 +1,4 @@
-# portfolio-website
-Personal Portfolio Website
+# Cameron Kingsley's portfolio website
 
 ## Link
 https://www.cameronjameskingsley.com/
