@@ -10,17 +10,18 @@ const AboutMeCard = () => {
           alt="screenshot"
         />
         <div className="about-text">
-          {/* <p> */}
-          Cameron is an aspiring full stack developer recently graduated from
-          the Flatiron School software engineering program.
+          {/* <p> */}I am a full stack developer with experience building
+          several applications. Graduating from the Flatiron School software
+          engineering program and a background in project management, I am
+          looking forward to new opportunites.
           {/* </p> */}
           <p>
-            My passion in life is to create, from software to the workshop, my
-            happy place is making something new, learning new techniques,
-            constantly pushing myself. As a developer I enjoy the opportunity to
-            work on exciting projects with the potential to reach vast amounts
-            of people. As a maker, I never shy away from a challenge and view
-            them as a chance to grow and get creative, to try something new.
+            From software to the workshop, my passion in life is creating
+            something new, learning new techniques, constantly pushing myself.
+            As a developer, I enjoy the opportunity to work on exciting projects
+            with the potential to help vast amounts of people. As a maker, I
+            never shy away from a challenge and view them as a chance to grow,
+            get creative and try something new.
           </p>
         </div>
       </div>
@@ -32,10 +33,10 @@ const AboutMeCard = () => {
             <div className="flex-horizontal">
               <h3 className="vertical-text skill-header">Frontend</h3>
               <ul className="skill-list">
-                <li>React Js</li>
-                <li>Javascript</li>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li>ReactJS</li>
+                <li>Redux</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
                 <li>JSX</li>
                 <li>Bootstrap</li>
               </ul>
@@ -47,10 +48,10 @@ const AboutMeCard = () => {
               <ul className="skill-list">
                 <li>Ruby</li>
                 <li>Rails</li>
-                <li>Python</li>
+                <li>Node.js</li>
                 <li>Sqlite3</li>
                 <li>PostgreSQL</li>
-                <li>MongoDB</li>
+                <li>Heroku</li>
               </ul>
             </div>
           </div>

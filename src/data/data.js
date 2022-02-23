@@ -1,6 +1,17 @@
 export const softwareProjects = [
   {
     id: "1",
+    name: "Fallout CellMate V2.0",
+    description:
+      "I revisited my earlier version of Fallout Cascadia CellMate, after completing from the Flatiron program I set aside enough time to revamp and release CellMate to the eargerly waiting Fallout Cascadia team. With this iteration I overhauled the frontend to incorporate ReactJS as well as practice with Bootstrap UI and Oauth2 authentication. After working with the team to include and refine features, the app was deployed on Heroku with a PostgreSQL database.",
+    stack: "ReactJS, Bootstrap, Rails API,",
+    image: "./images/projects/react-cell-mate-screenshot.png",
+    githubLink: "https://github.com/kingsley113/react-cell-mate",
+    link: "https://www.falloutcascadiacellmate.com/",
+    youtubeLink: "TODO:",
+  },
+  {
+    id: "2",
     name: "CyberBug",
     description:
       "CyberBug is a React application designed to help track and manage software bugs. As my final project with Flatiron School, this was an opportunity to combine everything taught over the program and create a true full stack application. Cyberbug utilizes a ReactJS frontend and Rails backend API with a PostgreSQL database. Inspired by the cyberpunk concept, I had a lot of fun with this project and wanted to push myself, ending the program on a high note. I learned a ton about implementing a full React application and bringing all of the various elements togehter and greatly expanded my CSS and UI design skills.",
@@ -9,17 +20,6 @@ export const softwareProjects = [
     githubLink: "https://github.com/kingsley113/Phase5-React-Cyberbug",
     link: "https://react-cyberbug.herokuapp.com/login",
     youtubeLink: "https://youtu.be/wGOGDfPU2UQ",
-  },
-  {
-    id: "2",
-    name: "CellMate V2.0 - Work In Progress",
-    description:
-      "I am currently revisiting my earlier version of Fallout Cascadia CellMate, after graduating from the Flatiron program I set aside enough time to revamp and release CellMate to the eargerly waiting Fallout Cascadia team. With this iteration I overhauled the frontend to incorporate ReactJS as well as practice with Bootstrap UI and external libraries. After working with the team to include and refine features, the app is planned to be deployed on AWS with MongoDB.",
-    stack: "ReactJS, Bootstrap UI, Rails API, MongoDB,",
-    image: "./images/projects/wip-placeholder.jpeg",
-    githubLink: "https://github.com/kingsley113/react-cell-mate",
-    link: "TODO:",
-    youtubeLink: "TODO:",
   },
   {
     id: "3",
